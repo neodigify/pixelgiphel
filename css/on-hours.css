@@ -1,0 +1,66 @@
+/* opening-hours-section  */
+
+.oh-section {
+  padding: 0px 20px;
+  max-width: 1837px;
+  margin: 0 auto;
+}
+
+.oh-heading {
+  font-style: normal;
+  line-height: 1.52em;
+  text-align: center;
+  color: #bfe2ff;
+  padding-bottom: 25px;
+}
+
+.oh-card {
+  max-width: 1628px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 29, 64, 0.6) 0%,
+    rgba(3, 71, 172, 0.6) 53.37%,
+    rgba(6, 29, 64, 0.6) 100%
+  );
+  border: 11px solid #2a5697;
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+
+.oh-title {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  font-style: normal;
+  line-height: 1.49em;
+  color: #b4ddff;
+}
+
+.oh-rows {
+  max-width: 617px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+}
+
+.oh-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.oh-day {
+  font-style: normal;
+  font-size: 1.52em;
+  line-height: 1.48em;
+  color: #ffffff;
+}
+
+.oh-time {
+  font-style: normal;
+  line-height: 1.52em;
+  color: #6caafa;
+}
+

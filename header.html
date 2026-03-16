@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelgipfel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+
+    /* =====================
+       RESET & BASE
+       ===================== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #050e2a;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .main { margin: 0 auto; }
+    .desktop-hide { display: none; }
+
+    /* =====================
+       PAGE WRAPPER
+       Full hero-bg covers header + hero together
+       ===================== */
+    .page-hero {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      background: url('./assets/hero-bg.png') center top / cover no-repeat;
+      background-color: #050e2a;
+      overflow: hidden;
+    }
+
+    /* Dark overlay at very top for header readability */
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 160px;
+      background: linear-gradient(to bottom, rgba(3,8,15,0.72) 0%, transparent 100%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* =====================
+       HEADER — transparent, floats over bg
+       ===================== */
+    .header-bg {
+      background: transparent;
+      position: relative;
+      z-index: 10;
+      padding-top: 18px;
+    }
+
+    .header {
+      max-width: 1837px;
+      padding: 0 20px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      position: relative;
+      overflow: visible;
+    }
+
+    /* ---- NAV ---- */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 32px;
+      width: 100%;
+      padding: 18px 20px 36px 20px;
+      background: url('./assets/bg.png') center center / cover no-repeat;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ---- SEARCH WRAP ---- */
+    .search-wrap {
+      position: absolute;
+      right: 7%;
+      top: -53%;
+      max-width: 1034px;
+      width: 58%;
+      height: 0;
+      padding-bottom: 5.78%;
+      z-index: 20;
+      flex-shrink: 0;
+    }
+
+    .search-wrap::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('./assets/search-before.svg') no-repeat center top / 100% 100%;
+      z-index: 0;
+    }
+
+    .search-pill {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 88%;
+      height: 52%;
+      min-height: 38px;
+      background: #0B162F;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .s-ico {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      margin-right: 8px;
+    }
+
+    .s-ico-border {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(8px, 1vw, 16px);
+      border-radius: 50%;
+      border: 1.13953px solid #6C9AFF;
+      flex-shrink: 0;
+    }
+
+    .s-ico svg {
+      width: clamp(10px, 1vw, 15px);
+      height: clamp(10px, 1vw, 15px);
+      fill: white;
+      flex-shrink: 0;
+    }
+
+    .search-pill input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: clamp(10px, 1.2vw, 16.67px);
+      line-height: 1.2;
+      letter-spacing: 0.2em;
+      color: #4B5C92;
+      padding-left: 8px;
+      min-width: 0;
+    }
+
+    .search-pill input::placeholder { color: #4B5C92; }
+
+    .s-btn {
+      height: 100%;
+      padding: clamp(6px, 0.8vw, 10px) clamp(14px, 2.5vw, 42px);
+      background: linear-gradient(276.86deg, #0841BD 9.7%, #1078EE 95.72%);
+      border-radius: 100px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: clamp(11px, 1.3vw, 19.6264px);
+      line-height: 1;
+      color: #FFFFFF;
+      margin-left: auto;
+      white-space: nowrap;
+      flex-shrink: 0;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .s-btn:hover {
+      background: linear-gradient(276.86deg, #0486FF 9.7%, #6198FF 95.72%);
+    }
+
+    /* ---- NAV LEFT ---- */
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+    }
+
+    .logo { width: 125px; height: auto; }
+    .logo img { width: 100%; height: auto; display: block; }
+
+    .nav-menu {
+      background: #030710;
+      border-radius: 16.4524px;
+      display: flex;
+      gap: 15px;
+      padding: 12px;
+      position: relative;
+    }
+
+    .close-menu-btn {
+      display: none;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 32px;
+      cursor: pointer;
+      z-index: 1001;
+      line-height: 1;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+    }
+
+    .menu-item {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 20.3236px;
+      line-height: 30px;
+      color: #8EACE3;
+      background: linear-gradient(152.89deg, #030710 0.27%, #030710 105.6%);
+      border-radius: 7.74233px;
+      padding: 21px 30px 21px 26px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .menu-item:hover {
+      background: linear-gradient(152.89deg, #599AFB 0.27%, #286FD8 105.6%);
+      color: #FFFFFF;
+    }
+
+    .menu-item::after {
+      content: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.04752 7.32104L-0.000177898 1.27335L1.27317 1.33575e-06L6.04752 4.77435L10.8219 1.33575e-06L12.0952 1.27335L6.04752 7.32104Z' fill='%230083EE'/%3E%3C/svg%3E");
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover::after {
+      content: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.04752 7.32104L-0.000177898 1.27335L1.27317 1.33575e-06L6.04752 4.77435L10.8219 1.33575e-06L12.0952 1.27335L6.04752 7.32104Z' fill='%23FFFFFF'/%3E%3C/svg%3E");
+      transform: rotate(180deg);
+    }
+
+    /* ---- NAV RIGHT ---- */
+    .nav-right {
+      background: #030710;
+      mix-blend-mode: soft-light;
+      opacity: 0.54;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      gap: 45px;
+      padding: 20px 31px;
+      flex-shrink: 0;
+      margin-left: auto;
+      margin-top: -50px;
+    }
+
+    .pc-icon svg { width: 37px; height: auto; display: block; }
+
+    .user-icon {
+      width: 32px; height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0px 0px 8px #3392FF, 0px 0px 4px #3392FF, 0px 0px 12px #3392FF;
+    }
+
+    .user-icon svg { width: 32px; height: 32px; display: block; }
+
+    /* Mobile overlay */
+    .menu-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .menu-overlay.open { opacity: 1; pointer-events: all; }
+
+    /* =====================
+       HERO CONTENT
+       Sits below the nav, still inside page-hero bg
+       ===================== */
+    .hero {
+      position: relative;
+      z-index: 5;
+      padding: 40px 20px 80px;
+      margin-top: -20px;
+    }
+
+    .hero-inner {
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      position: relative;
+    }
+
+
+    .hero-card {
+      flex: 1;
+      background: linear-gradient(135deg, rgba(13,36,97,0.92) 0%, rgba(10,26,74,0.92) 55%, rgba(7,18,53,0.92) 100%);
+      border-radius: 24px;
+      border: 1px solid rgba(100,160,255,0.18);
+      box-shadow:
+        0 0 70px rgba(10,80,200,0.3),
+        inset 0 1px 0 rgba(255,255,255,0.06);
+      padding: 44px 44px 44px 48px;
+      position: relative;
+      overflow: hidden;
+      min-height: 370px;
+      backdrop-filter: blur(4px);
+    }
+
+    .hex-pattern {
+      position: absolute;
+      bottom: -20px; left: -20px;
+      opacity: 0.75;
+      pointer-events: none;
+    }
+
+    .hero-card__content {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card__text { flex: 1; min-width: 0; }
+
+    .hero-card__title {
+      font-size: clamp(28px, 3.5vw, 44px);
+      font-weight: 700;
+      color: #fff;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+    .hero-card__title--accent { color: #4db8ff; }
+
+    .hero-card__subtitle {
+      font-size: clamp(13px, 1.35vw, 17px);
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.5;
+      margin: 0 0 16px;
+    }
+
+    .hero-card__desc {
+      font-size: clamp(12px, 1.05vw, 14.5px);
+      font-weight: 300;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .hero-card__image {
+      flex-shrink: 0;
+      width: clamp(200px, 28vw, 320px);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-card__image img {
+      width: 100%; height: auto;
+      object-fit: contain;
+      position: relative; z-index: 1;
+      filter: drop-shadow(0 0 32px rgba(80,140,255,0.55));
+    }
+
+    .hero-card__image-glow {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 220px; height: 220px;
+      background: radial-gradient(circle, rgba(80,160,255,0.45) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ---- ARROW ---- */
+    .hero-arrow {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background 0.2s ease, transform 0.2s ease;
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-arrow:hover {
+      background: rgba(80,140,255,0.28);
+      transform: scale(1.08);
+    }
+
+    /* ---- SIDEBAR ---- */
+    .hero-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .hero-sidebar__item {
+      width: 52px; height: 52px;
+      border-radius: 12px;
+      background: rgba(8,17,31,0.85);
+      border: 1px solid rgba(100,160,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: rgba(255,255,255,0.45);
+      transition: all 0.2s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-sidebar__item:hover,
+    .hero-sidebar__item--active {
+      background: linear-gradient(135deg, #1a4a9f, #0d2d6e);
+      border-color: rgba(100,160,255,0.4);
+      color: #fff;
+      box-shadow: 0 0 18px rgba(50,120,255,0.35);
+    }
+
+    /* =====================
+       MOBILE
+       ===================== */
+    @media (max-width: 1024px) {
+
+      .desktop-hide { display: flex; }
+
+      .header-bg { padding-top: 0; }
+
+      .search-wrap {
+        position: relative;
+        right: auto; top: auto;
+        width: 100%; max-width: 100%;
+        height: 0;
+        padding-bottom: 9.96%;
+        z-index: 20;
+      }
+
+      .search-pill { top: 24%; width: 90%; height: 48%; min-height: 36px; }
+      .search-pill input { font-size: clamp(10px, 2.5vw, 14px); padding-left: 6px; letter-spacing: 0.1em; }
+      .s-btn { padding: 6px 14px; font-size: clamp(10px, 2vw, 14px); }
+      .s-ico-border { padding: 8px; }
+
+      .nav { border-radius: 0; padding: 16px; flex-wrap: wrap; }
+      .nav-left { gap: 12px; flex: 1; }
+
+      .hamburger-menu {
+        width: 30px; height: auto;
+        cursor: pointer;
+        display: block !important;
+        flex-shrink: 0;
+      }
+
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0; left: 0;
+        width: 75%; max-width: 300px;
+        height: 100vh;
+        background: #030710;
+        border-radius: 0 24px 24px 0;
+        padding: 70px 20px 30px;
+        gap: 8px;
+        z-index: 1000;
+        overflow-y: auto;
+      }
+
+      .nav-menu.open { display: flex; }
+      .close-menu-btn { display: block; }
+      .menu-item { font-size: 16px; padding: 14px 20px; width: 100%; }
+      .nav-right { margin-top: 0; gap: 20px; padding: 12px 16px; margin-left: 0; }
+      .logo { width: 90px; }
+      .menu-overlay { display: block; }
+
+      .hero { padding: 20px 16px 50px; margin-top: 0; }
+      .hero-inner { flex-direction: column; gap: 16px; }
+      .hero-card__content { flex-direction: column; }
+      .hero-card__image { width: 100%; max-width: 280px; margin: 0 auto; }
+      .hero-card__title { text-align: left; }
+      .hero-arrow { display: none; }
+      .hero-sidebar { flex-direction: row; justify-content: center; }
+      .hero-card { padding: 28px 20px; }
+    }
+
+    @media (max-width: 480px) {
+      .search-wrap { padding-bottom: 14%; }
+      .hero-card__title { font-size: 22px; }
+      .hero-card__subtitle { font-size: 13px; }
+    }
+
+    </style>
+</head>
+<body>
+<div class="main">
+
+  <!-- ===== SINGLE BG WRAPPER — header + hero share one background ===== -->
+  <div class="page-hero">
+
+    <!-- HEADER — transparent, floats over hero-bg -->
+    <div class="header-bg">
+      <div class="header">
+        <div class="nav">
+
+          <!-- Search -->
+          <div class="search-wrap">
+            <div class="search-pill">
+              <div class="s-ico">
+                <span class="s-ico-border">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.83789 4.09078C3.70825 1.14035 7.02166 -0.604673 10.2383 0.193323C13.4549 0.991672 15.3583 4.03092 14.4883 6.98141L14.3994 7.25387C13.4109 10.0381 10.2032 11.6521 7.08691 10.8789L6.78906 10.7968C6.36619 10.6705 5.96934 10.5023 5.59961 10.3027L1.40234 14.1367L0 12.6211L3.96094 9.00192C2.85636 7.73931 2.36635 6.05139 2.76465 4.36715L2.83789 4.09078ZM9.64648 2.20016C7.40621 1.64437 5.37177 2.89084 4.86914 4.59469C4.3667 6.29851 5.43862 8.31491 7.67871 8.87106C9.91911 9.42711 11.9543 8.18142 12.457 6.4775C12.9595 4.77359 11.8868 2.75619 9.64648 2.20016Z" fill="white"/>
+                  </svg>
+                </span>
+              </div>
+              <input type="text" placeholder="Search Product Here">
+              <button class="s-btn">Search</button>
+            </div>
+          </div>
+
+          <!-- Nav Left -->
+          <div class="nav-left">
+            <img src="./assets/hamburger.svg" loading="lazy" alt="menu" class="hamburger-menu desktop-hide" />
+            <div class="logo">
+              <a href="#"><img src="./assets/Pixelgipfel-logo.png" alt="Pixelgipfel"></a>
+            </div>
+            <div class="nav-menu">
+              <button class="close-menu-btn">&times;</button>
+              <a href="#" class="menu-item">Produkte</a>
+              <a href="#" class="menu-item">Service</a>
+              <a href="#" class="menu-item">Business</a>
+            </div>
+          </div>
+
+          <!-- Nav Right -->
+          <div class="nav-right">
+            <div class="pc-icon">
+              <svg width="38" height="30" viewBox="0 0 38 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.5537 29.7402H11.1523V28.1475H26.5537V29.7402ZM21.2432 26.0225H15.9326V24.4297H6.07031L5.75879 24.4219C2.55097 24.2595 0 21.6066 0 18.3584V6.07031C0.000282669 2.71791 2.7179 0.000245824 6.07031 0H31.1045L31.417 0.0078125C34.6244 0.170455 37.1745 2.82257 37.1748 6.07031V18.3584C37.1748 21.6064 34.6245 24.2592 31.417 24.4219L31.1045 24.4297H21.2432V26.0225ZM6.07031 2.27637C3.9752 2.27661 2.27665 3.97521 2.27637 6.07031V18.3584C2.27637 20.4537 3.97503 22.1531 6.07031 22.1533H31.1045C33.2 22.1533 34.8984 20.4539 34.8984 18.3584V6.07031C34.8982 3.97506 33.1998 2.27638 31.1045 2.27637H6.07031Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="user-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0ZM16 18.8887C11.2458 18.8888 7.3999 22.1662 6.59961 26.374C9.08439 28.627 12.3817 30 16 30C19.618 30 22.9147 28.6267 25.3994 26.374C24.5994 22.1662 20.7542 18.8888 16 18.8887ZM16 2C8.26801 2 2 8.26801 2 16C2 19.2615 3.11531 22.2626 4.98535 24.6426C6.46556 20.1476 10.8356 16.8888 16 16.8887L16.5947 16.9033C21.4978 17.1424 25.5906 20.3214 27.0137 24.6426C28.8839 22.2625 30 19.2618 30 16C30 8.26801 23.732 2 16 2ZM16.4443 5.33301C19.1441 5.33309 21.3327 7.52192 21.333 10.2217C21.333 12.9217 19.1443 15.1103 16.4443 15.1104C13.7444 15.1102 11.5557 12.9217 11.5557 10.2217C11.556 7.52194 13.7446 5.33313 16.4443 5.33301ZM16.4443 7.33301C14.8491 7.33313 13.556 8.62651 13.5557 10.2217C13.5557 11.8171 14.8489 13.1102 16.4443 13.1104C18.0398 13.1103 19.333 11.8171 19.333 10.2217C19.3327 8.62649 18.0396 7.33309 16.4443 7.33301ZM30.667 0C31.4031 0.000175503 31.9998 0.596886 32 1.33301C32 2.06928 31.4032 2.66682 30.667 2.66699C29.9306 2.66699 29.333 2.06939 29.333 1.33301C29.3332 0.596778 29.9307 0 30.667 0Z" fill="white"/>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+        <div class="menu-overlay desktop-hide"></div>
+      </div>
+    </div>
+
+    <!-- HERO CONTENT — shares same bg, no duplicate background -->
+    <section class="hero">
+      <div class="hero-inner">
+
+        <!-- Card -->
+        <div class="hero-card">
+          <div class="hex-pattern">
+            <svg width="340" height="280" viewBox="0 0 340 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="hex" x="0" y="0" width="44" height="50" patternUnits="userSpaceOnUse">
+                  <polygon points="22,2 42,13 42,37 22,48 2,37 2,13" fill="none" stroke="rgba(100,160,255,0.18)" stroke-width="1.2"/>
+                </pattern>
+              </defs>
+              <rect width="340" height="280" fill="url(#hex)"/>
+            </svg>
+          </div>
+
+          <div class="hero-card__content">
+            <div class="hero-card__text">
+              <h2 class="hero-card__title">
+                <span class="hero-card__title--accent">Our</span> Products
+              </h2>
+              <p class="hero-card__subtitle">
+                Discover high-performance PCs for gaming,<br>
+                3D rendering, and professional office use.
+              </p>
+              <p class="hero-card__desc">
+                Our store offers a wide range of computer products, including VR headsets, keyboards,
+                mice, CPUs, GPUs, and more. Explore our collection and upgrade your experience today.
+              </p>
+            </div>
+            <div class="hero-card__image">
+              <div class="hero-card__image-glow"></div>
+              <img src="./assets/hero-product.png" alt="Gaming PC Setup" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrow -->
+        <button class="hero-arrow">
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none">
+            <path d="M1 1L10 10L1 19" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Sidebar -->
+        <div class="hero-sidebar">
+          <button class="hero-sidebar__item hero-sidebar__item--active">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </button>
+          <button class="hero-sidebar__item">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"/>
+              <line x1="12" y1="20" x2="12" y2="4"/>
+              <line x1="6" y1="20" x2="6" y2="14"/>
+            </svg>
+          </button>
+          <button class="hero-sidebar__item">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </button>
+          <button class="hero-sidebar__item">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- /.page-hero -->
+
+</div><!-- /.main -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+$(document).ready(function () {
+
+  $('.hamburger-menu').off('click').on('click', function () {
+    $('.nav-menu').addClass('open');
+    $('.menu-overlay').addClass('open');
+    $('body').css('overflow', 'hidden');
+  });
+
+  $(document).off('click', '.close-menu-btn').on('click', '.close-menu-btn', function (e) {
+    e.stopPropagation();
+    $('.nav-menu').removeClass('open');
+    $('.menu-overlay').removeClass('open');
+    $('body').css('overflow', '');
+  });
+
+});
+</script>
+</body>
+</html>

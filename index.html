@@ -1,0 +1,2081 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixelgipfel</title>
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="css/mobile.css" rel="stylesheet" type="text/css" /> -->
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/hero.css" rel="stylesheet" type="text/css" />
+    <link href="css/products.css" rel="stylesheet" type="text/css" />
+    <link href="css/on-hours.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="header-bg">
+        <div class="header">
+          <div class="nav">
+            <div class="search-wrap">
+              <div class="search-pill desktop-only">
+                <div class="s-ico">
+                  <span class="s-ico-border">
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.83789 4.09078C3.70825 1.14035 7.02166 -0.604673 10.2383 0.193323C13.4549 0.991672 15.3583 4.03092 14.4883 6.98141L14.3994 7.25387C13.4109 10.0381 10.2032 11.6521 7.08691 10.8789L6.78906 10.7968C6.36619 10.6705 5.96934 10.5023 5.59961 10.3027L1.40234 14.1367L0 12.6211L3.96094 9.00192C2.85636 7.73931 2.36635 6.05139 2.76465 4.36715L2.83789 4.09078ZM9.64648 2.20016C7.40621 1.64437 5.37177 2.89084 4.86914 4.59469C4.3667 6.29851 5.43862 8.31491 7.67871 8.87106C9.91911 9.42711 11.9543 8.18142 12.457 6.4775C12.9595 4.77359 11.8868 2.75619 9.64648 2.20016Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Produkt suchen"
+                  class="pop-17-300"
+                />
+                <button class="s-btn pop-20-500">Suchen</button>
+              </div>
+              <div class="logo desktop-hide">
+                <a href="#"
+                  ><img src="./assets/Pixelgipfel-logo.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="nav-left">
+              <svg
+                class="hamburger-menu desktop-hide"
+                width="27"
+                height="17"
+                viewBox="0 0 27 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 16.0786H26.4689V14.697H0V16.0786ZM0 0V1.38153H26.4689V0H0ZM0 8.72987H26.4689V7.34834H0V8.72987Z"
+                  fill="#FFFFFF"
+                />
+              </svg>
+              <svg
+                class="search-icon desktop-hide"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="10.5"
+                  cy="10.5"
+                  r="7.5"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <line
+                  x1="16.5"
+                  y1="16.5"
+                  x2="22"
+                  y2="22"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div class="logo desktop-only">
+                <a href="#"
+                  ><img src="./assets/Pixelgipfel-logo.png" alt="" />
+                </a>
+              </div>
+              <div class="nav-menu pop-20-500">
+                <button class="close-menu-btn desktop-hide">&times;</button>
+                <a href="#" class="menu-item">Produkte</a>
+                <a href="#" class="menu-item">Service</a>
+                <a href="#" class="menu-item">Business</a>
+              </div>
+            </div>
+            <div class="nav-right">
+              <div class="pc-icon">
+                <svg
+                  width="38"
+                  height="30"
+                  viewBox="0 0 38 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26.5537 29.7402H11.1523V28.1475H26.5537V29.7402ZM21.2432 26.0225H15.9326V24.4297H6.07031L5.75879 24.4219C2.55097 24.2595 0 21.6066 0 18.3584V6.07031C0.000282669 2.71791 2.7179 0.000245824 6.07031 0H31.1045L31.417 0.0078125C34.6244 0.170455 37.1745 2.82257 37.1748 6.07031V18.3584C37.1748 21.6064 34.6245 24.2592 31.417 24.4219L31.1045 24.4297H21.2432V26.0225ZM6.07031 2.27637C3.9752 2.27661 2.27665 3.97521 2.27637 6.07031V18.3584C2.27637 20.4537 3.97503 22.1531 6.07031 22.1533H31.1045C33.2 22.1533 34.8984 20.4539 34.8984 18.3584V6.07031C34.8982 3.97506 33.1998 2.27638 31.1045 2.27637H6.07031Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="user-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0ZM16 18.8887C11.2458 18.8888 7.3999 22.1662 6.59961 26.374C9.08439 28.627 12.3817 30 16 30C19.618 30 22.9147 28.6267 25.3994 26.374C24.5994 22.1662 20.7542 18.8888 16 18.8887ZM16 2C8.26801 2 2 8.26801 2 16C2 19.2615 3.11531 22.2626 4.98535 24.6426C6.46556 20.1476 10.8356 16.8888 16 16.8887L16.5947 16.9033C21.4978 17.1424 25.5906 20.3214 27.0137 24.6426C28.8839 22.2625 30 19.2618 30 16C30 8.26801 23.732 2 16 2ZM16.4443 5.33301C19.1441 5.33309 21.3327 7.52192 21.333 10.2217C21.333 12.9217 19.1443 15.1103 16.4443 15.1104C13.7444 15.1102 11.5557 12.9217 11.5557 10.2217C11.556 7.52194 13.7446 5.33313 16.4443 5.33301ZM16.4443 7.33301C14.8491 7.33313 13.556 8.62651 13.5557 10.2217C13.5557 11.8171 14.8489 13.1102 16.4443 13.1104C18.0398 13.1103 19.333 11.8171 19.333 10.2217C19.3327 8.62649 18.0396 7.33309 16.4443 7.33301ZM30.667 0C31.4031 0.000175503 31.9998 0.596886 32 1.33301C32 2.06928 31.4032 2.66682 30.667 2.66699C29.9306 2.66699 29.333 2.06939 29.333 1.33301C29.3332 0.596778 29.9307 0 30.667 0Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="menu-overlay desktop-hide"></div>
+        </div>
+      </div>
+
+      <div class="hero-wrapper">
+        <div class="hero">
+          <div class="hero-inner">
+            <div class="hero-card-wrap">
+              <div class="hero-card">
+                <h2 class="hero-card-title title pop-56-700">
+                  <span class="title-accent">Our</span>&nbsp;Products
+                </h2>
+                <div class="hero-card-content">
+                  <div class="hero-card-text">
+                    <p class="hero-card-subtitle pop-28-700">
+                      Discover high-performance PCs for gaming, 3D rendering,
+                      and professional office use.
+                    </p>
+                    <p class="hero-card-desc pop-25-400">
+                      Our store offers a wide range of computer products,
+                      including VR headsets, keyboards, mice, CPUs, GPUs, and
+                      more. Explore our collection and upgrade your experience
+                      today.
+                    </p>
+                  </div>
+                  <div class="hero-card-image">
+                    <img src="./assets/product-img.png" alt="Gaming PC Setup" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-sidebar-wrap" id="sidebarWrap">
+              <!-- Arrow toggle -->
+              <div class="sidebar-toggle-arrow" id="sidebarToggle">
+                <svg
+                  width="11"
+                  height="17"
+                  viewBox="0 0 11 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.733 8.48666L2.24634 16.9733L3.09377e-05 14.727L6.24039 8.48666L3.09377e-05 2.24631L2.24634 0L10.733 8.48666Z"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              </div>
+
+              <!-- Sidebar icons -->
+              <div class="hero-sidebar">
+                <a href="#" class="sidebar-item active">
+                  <svg
+                    width="44"
+                    height="44"
+                    viewBox="0 0 44 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <mask
+                      id="mask0_2078_8078"
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="44"
+                      height="44"
+                    >
+                      <rect
+                        width="43.4629"
+                        height="43.4629"
+                        fill="url(#pattern0_2078_8078)"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_2078_8078)">
+                      <rect
+                        x="-4.75378"
+                        y="-12.2239"
+                        width="59.0824"
+                        height="64.5153"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <pattern
+                        id="pattern0_2078_8078"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_2078_8078"
+                          transform="scale(0.015625)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_2078_8078"
+                        width="64"
+                        height="64"
+                        preserveAspectRatio="none"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+                </a>
+
+                <a href="#" class="sidebar-item">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <mask
+                      id="mask0_2078_8082"
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="41"
+                      height="41"
+                    >
+                      <path
+                        d="M0 0H40.4655V40.4655H0V0Z"
+                        fill="url(#pattern0_2078_8082)"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_2078_8082)">
+                      <rect
+                        x="-15.1746"
+                        y="-10.1164"
+                        width="70.8146"
+                        height="60.0659"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <pattern
+                        id="pattern0_2078_8082"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_2078_8082"
+                          transform="scale(0.015625)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_2078_8082"
+                        width="64"
+                        height="64"
+                        preserveAspectRatio="none"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAHYAAAB2AH6XKZyAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAbNJREFUeJztmr1Kw1AYhh9LFxcnN3UQcXF1UMGCm5uT1MkbcPEGXN06eQ/eiYOTLg4OCqLgTwUXrYOIOtSA1IQ0J8l5c5LvgSwJ58v7PjThEArh0gGugQdgW5zFOx3gFfj+PT6BXWkij4yWb5SEpPKNkJBWvtYSxi1fSwlZy9dKgmv5WkjIWz5oCUWVD1JC0eWDklBW+SAklF2+0hJ8la+khHVggL/yfyV0PfRL5RT/5aPjseWhYBpvwnsPJoQ3j1gEesBMwvUlYNJx9hdwnnDtBThwnOuVC9x/4u9pw6vwCEgxAeoAakyAOoAaE6AOoKZdwswV4AiYzriuD+yRvHEJhjPcNy4nMfOC2wjN5lg7V1iKMWn8O8AEqAOoMQHqAGpMgDqAGhOgDqDGBKgDqDEB6gBq2sAacAhMZVx7B+wDt0WH8kkbOAbmHdYuAx/ATqGJPNPCrXzEQlFBVDT+HWAC1AHUmAB1ADUmQB1AjQlQB1BjAtQB1JgAdQA1JkAdQI0JUAdQ0wKec6zvx5yr+rx/dIEnsv//5pLhd8FRNhl+MM067wbYiJm3Clw5zLsHttLK/wD4+IUVAGn3ewAAAABJRU5ErkJggg=="
+                      />
+                    </defs>
+                  </svg>
+                </a>
+
+                <a href="#" class="sidebar-item">
+                  <svg
+                    width="41"
+                    height="41"
+                    viewBox="0 0 41 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <mask
+                      id="mask0_2078_8085"
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="41"
+                      height="41"
+                    >
+                      <path
+                        d="M0 0H40.0409V40.0409H0V0Z"
+                        fill="url(#pattern0_2078_8085)"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_2078_8085)">
+                      <rect
+                        x="-11.2616"
+                        y="-10.0103"
+                        width="70.0716"
+                        height="59.4357"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <pattern
+                        id="pattern0_2078_8085"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_2078_8085"
+                          transform="scale(0.015625)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_2078_8085"
+                        width="64"
+                        height="64"
+                        preserveAspectRatio="none"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+                </a>
+                <a href="#" class="sidebar-item">
+                  <svg
+                    width="37"
+                    height="37"
+                    viewBox="0 0 37 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <mask
+                      id="mask0_2078_8088"
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="37"
+                      height="37"
+                    >
+                      <path
+                        d="M0 0H36.0409V36.0409H0V0Z"
+                        fill="url(#pattern0_2078_8088)"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_2078_8088)">
+                      <rect
+                        x="-10.1366"
+                        y="-6.75769"
+                        width="63.0716"
+                        height="53.4982"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <pattern
+                        id="pattern0_2078_8088"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_2078_8088"
+                          transform="scale(0.015625)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_2078_8088"
+                        width="64"
+                        height="64"
+                        preserveAspectRatio="none"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="products-section-wrap">
+        <svg width="0" height="0" style="position: absolute">
+          <defs>
+            <clipPath
+              id="products-clip"
+              clipPathUnits="objectBoundingBox"
+              transform="scale(0.000511771, 0.000395570)"
+            >
+              <path
+                d="M648.977 0C657.361 4.54222e-05 665.51 2.77354 672.154 7.8877L811.494 115.14C818.138 120.254 826.288 123.027 834.673 123.027H1954V2527.66H1086.24C1077.11 2527.66 1068.29 2524.37 1061.39 2518.41L922.961 2398.75C916.057 2392.78 907.237 2389.5 898.111 2389.5H0V0H648.977Z"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="products-section">
+          <h2 class="product-title pop-56-700">
+            All &nbsp;<span class="product-title-accent">Products</span>
+          </h2>
+          <div class="category-bar-wrap">
+            <div class="category-bar">
+              <button class="cat-arrow" id="catPrev">
+                <svg
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="arrow-icon"
+                    d="M31.5049 21.1807L26.6661 26.0195H36.3087V29.3018H26.4131L31.5049 34.3936L29.1846 36.7148L20.2569 27.7871L29.1846 18.8604L31.5049 21.1807Z"
+                    fill="#5594E8"
+                  />
+                  <path
+                    class="arrow-circle"
+                    d="M5.11565 27.0226C5.25671 22.9281 6.50315 18.948 8.72282 15.5045C10.9425 12.061 14.0526 9.28228 17.7235 7.46306C21.3944 5.64384 25.4891 4.8519 29.5736 5.17121C33.6581 5.49052 37.58 6.90918 40.9236 9.27677C44.2671 11.6444 46.9077 14.8726 48.5652 18.6193C50.2228 22.3659 50.8356 26.4913 50.3386 30.558C49.8417 34.6246 48.2535 38.481 45.7425 41.7183C43.2315 44.9555 39.8912 47.4529 36.0759 48.9457L35.0464 46.3142C38.3868 45.0073 41.3113 42.8207 43.5097 39.9864C45.7082 37.1521 47.0987 33.7757 47.5338 30.2152C47.9689 26.6547 47.4324 23.0428 45.9811 19.7625C44.5299 16.4822 42.218 13.6557 39.2906 11.5828C36.3632 9.50995 32.9295 8.26787 29.3534 7.98831C25.7773 7.70874 22.1922 8.40211 18.9782 9.99489C15.7643 11.5877 13.0412 14.0205 11.0979 17.0354C9.15446 20.0504 8.06316 23.535 7.93966 27.1199L5.11565 27.0226Z"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              </button>
+              <div class="category-slider-outer">
+                <div class="category-slider pop-19-500" id="categorySlider">
+                  <button class="cat-tab active">Laptops</button>
+                  <button class="cat-tab">Computer</button>
+                  <button class="cat-tab">VR Sets</button>
+                  <button class="cat-tab">Tables</button>
+                  <button class="cat-tab">Chairs</button>
+                  <button class="cat-tab">Monitors</button>
+                  <button class="cat-tab">Keyboards</button>
+                  <button class="cat-tab">GPUs</button>
+                </div>
+              </div>
+              <button class="cat-arrow" id="catNext">
+                <svg
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="arrow-icon"
+                    d="M24.1035 21.1807L28.9424 26.0195H19.2998V29.3018H29.1953L24.1035 34.3936L26.4238 36.7148L35.3516 27.7871L26.4238 18.8604L24.1035 21.1807Z"
+                    fill="#5594E8"
+                  />
+                  <path
+                    class="arrow-circle"
+                    d="M50.4928 27.0226C50.3518 22.9281 49.1053 18.948 46.8857 15.5045C44.666 12.061 41.5558 9.28228 37.885 7.46306C34.2141 5.64384 30.1193 4.8519 26.0349 5.17121C21.9504 5.49052 18.0285 6.90918 14.6849 9.27677C11.3413 11.6444 8.70079 14.8726 7.04323 18.6193C5.38567 22.3659 4.77288 26.4913 5.26984 30.558C5.7668 34.6246 7.35498 38.481 9.86599 41.7183C12.377 44.9555 15.7172 47.4529 19.5325 48.9457L20.5621 46.3142C17.2217 45.0073 14.2972 42.8207 12.0987 39.9864C9.90027 37.1521 8.50977 33.7757 8.07467 30.2152C7.63956 26.6547 8.17608 23.0428 9.62733 19.7625C11.0786 16.4822 13.3905 13.6557 16.3178 11.5828C19.2452 9.50995 22.679 8.26787 26.2551 7.98831C29.8312 7.70874 33.4163 8.40211 36.6302 9.99489C39.8442 11.5877 42.5672 14.0205 44.5106 17.0354C46.454 20.0504 47.5453 23.535 47.6688 27.1199L50.4928 27.0226Z"
+                    fill="#D9D9D9"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- Main Layout -->
+          <div class="product-layout">
+            <!-- Filter Panel -->
+            <aside class="filter-panel">
+              <h3 class="filter-title pop-37-700">Filter</h3>
+
+              <!-- Price -->
+              <div class="filter-section">
+                <div class="filter-wrapper">
+                  <div
+                    class="filter-section-header open"
+                    onclick="toggleSection(this)"
+                  >
+                    <span class="filter-section-label pop-28-700">Price</span>
+                    <svg
+                      width="22"
+                      height="15"
+                      viewBox="0 0 22 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.9519 3.57835e-05L21.9037 10.9519L18.4449 14.4108L10.9512 6.91711L3.45819 14.4101L0 10.9519L10.9519 3.57835e-05Z"
+                        fill="#8BB3FF"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="filter-section-content">
+                    <div class="price-inputs">
+                      <div class="price-input-col">
+                        <div class="price-input-wrap pop-24-300">
+                          <input
+                            type="text"
+                            id="input-min"
+                            placeholder="CHF 399"
+                          />
+                        </div>
+                        <span
+                          class="price-currency-label pop-28-500"
+                          id="currency-label-min"
+                          >CHF
+                          <span class="pct-badge" id="pct-min">0%</span></span
+                        >
+                      </div>
+
+                      <span class="price-divider pop-40-600">-</span>
+
+                      <div class="price-input-col">
+                        <div class="price-input-wrap pop-24-300">
+                          <input
+                            type="text"
+                            id="input-max"
+                            placeholder="CHF 700"
+                          />
+                        </div>
+                        <span
+                          class="price-currency-label pop-28-500"
+                          id="currency-label-max"
+                          >CHF
+                          <span class="pct-badge" id="pct-max">0%</span></span
+                        >
+                      </div>
+                    </div>
+
+                    <div class="range-wrap">
+                      <div class="range-track"></div>
+                      <div class="range-fill" id="range-fill"></div>
+                      <input
+                        type="range"
+                        id="range-min"
+                        min="0"
+                        max="5000"
+                        value="399"
+                        step="1"
+                      />
+                      <input
+                        type="range"
+                        id="range-max"
+                        min="0"
+                        max="5000"
+                        value="2000"
+                        step="1"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="filter-divider" />
+
+              <!-- Search -->
+              <div class="filter-section">
+                <div
+                  class="filter-section-header"
+                  onclick="toggleSection(this)"
+                >
+                  <span class="filter-section-label pop-28-700">Search</span>
+               
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="15"
+                    viewBox="0 0 22 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.9519 3.57835e-05L21.9037 10.9519L18.4449 14.4108L10.9512 6.91711L3.45819 14.4101L0 10.9519L10.9519 3.57835e-05Z"
+                      fill="#8BB3FF"
+                    />
+                  </svg>
+                </div>
+                <div class="filter-section-content closed">
+                  <input
+                    class="search-filter-input pop-25-300"
+                    type="text"
+                    placeholder="Search Collection"
+                  />
+                </div>
+              </div>
+
+              <hr class="filter-divider" />
+
+              <!-- Collection -->
+              <div class="filter-section">
+                <div
+                  class="filter-section-header"
+                  onclick="toggleSection(this)"
+                >
+                  <span class="filter-section-label pop-28-700"
+                    >Collection</span
+                  >
+             
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="15"
+                    viewBox="0 0 22 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.9519 3.57835e-05L21.9037 10.9519L18.4449 14.4108L10.9512 6.91711L3.45819 14.4101L0 10.9519L10.9519 3.57835e-05Z"
+                      fill="#8BB3FF"
+                    />
+                  </svg>
+                </div>
+                <div class="filter-section-content closed">
+                  <div class="checkbox-list pop-29-400">
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> Acer</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> Asus</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> Office laptops</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> DELL</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> Gaming</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> Gaming Laptops</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> Laptops</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <hr class="filter-divider" />
+
+              <!-- Vendors -->
+              <div class="filter-section">
+                <div
+                  class="filter-section-header"
+                  onclick="toggleSection(this)"
+                >
+                  <span class="filter-section-label pop-28-700">Vendors</span>
+              
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="15"
+                    viewBox="0 0 22 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.9519 3.57835e-05L21.9037 10.9519L18.4449 14.4108L10.9512 6.91711L3.45819 14.4101L0 10.9519L10.9519 3.57835e-05Z"
+                      fill="#8BB3FF"
+                    />
+                  </svg>
+                </div>
+                <div class="filter-section-content closed">
+                  <div class="checkbox-list pop-29-400">
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> Apple</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> Asus</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> Nvidia</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> DELL</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> AMD</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> HP</label
+                    >
+                    <label class="checkbox-item"
+                      ><input type="checkbox" /> Lenovo</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <div class="product-area">
+              <div class="product-grid-wrap">
+                <div class="product-grid" id="productGrid">
+                  <div class="product-card">
+                    <div class="card-img-wrap">
+                      <div class="wishlist-btn">
+                        <svg
+                          width="38"
+                          height="31"
+                          viewBox="0 0 38 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.8125 0C33.2199 0.000220309 37.5995 4.39675 37.5996 9.81348V10.3721C37.5996 13.5446 36.1507 16.5443 33.667 18.5117L19.2998 29.8906L18.7363 30.3369L18.1748 29.8887L3.91016 18.5137C1.43926 16.5431 5.05959e-05 13.5502 0 10.3857V9.74023C9.26261e-05 4.36404 4.34686 0.000229445 9.71387 0C11.9731 9.14352e-05 14.1624 0.790624 15.9033 2.2334L18.7402 4.58398L21.6025 2.22852C23.3527 0.788132 25.5477 4.28877e-05 27.8125 0ZM27.8125 1.80859C25.9675 1.80864 24.1789 2.44988 22.752 3.62402L19.3125 6.45508L18.7363 6.92871L18.1621 6.45312L14.75 3.625C13.333 2.45064 11.5513 1.80868 9.71387 1.80859C5.35015 1.80882 1.80869 5.35747 1.80859 9.74023V10.3857C1.80864 13.0012 2.99811 15.4727 5.03809 17.0996L18.7402 28.0273L32.5449 17.0947C34.5949 15.4709 35.792 12.9935 35.792 10.3721V9.81348C35.7919 5.39018 32.2166 1.80881 27.8125 1.80859Z"
+                            fill="#A9B1C2"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="discount-badge-wrap">
+                        <span
+                          class="discount-badge discount-badge-default pop-17-500"
+                          >Discount</span
+                        >
+                        <span
+                          class="discount-badge discount-badge-hover pop-17-500"
+                          data-amount="10%"
+                        >
+                          <span class="discount-amount">10% </span> Discount
+                        </span>
+                      </div>
+                      <div class="product-card-img">
+                        <img
+                          src="./assets/product-grid-img.png"
+                          alt="Product"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="card-info-left">
+                        <div class="card-name pop-20-400">
+                          Product Name Goes Here
+                        </div>
+                        <div class="card-price inter-18-600">
+                          Price : 6,700 CHF
+                        </div>
+                      </div>
+                      <a href="#" class="card-arrow-btn">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0516 20.3403L15.0516 9.31528L4.06658 20.3003L0.327339 16.5611L11.6003 5.28809L2.6409e-05 5.28878L2.68548e-05 0.000669901L20.3397 -1.89189e-05L20.3397 20.3403L15.0516 20.3403Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="card-arrow-dot"></span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="product-card">
+                    <div class="card-img-wrap">
+                      <div class="wishlist-btn">
+                        <svg
+                          width="38"
+                          height="31"
+                          viewBox="0 0 38 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.8125 0C33.2199 0.000220309 37.5995 4.39675 37.5996 9.81348V10.3721C37.5996 13.5446 36.1507 16.5443 33.667 18.5117L19.2998 29.8906L18.7363 30.3369L18.1748 29.8887L3.91016 18.5137C1.43926 16.5431 5.05959e-05 13.5502 0 10.3857V9.74023C9.26261e-05 4.36404 4.34686 0.000229445 9.71387 0C11.9731 9.14352e-05 14.1624 0.790624 15.9033 2.2334L18.7402 4.58398L21.6025 2.22852C23.3527 0.788132 25.5477 4.28877e-05 27.8125 0ZM27.8125 1.80859C25.9675 1.80864 24.1789 2.44988 22.752 3.62402L19.3125 6.45508L18.7363 6.92871L18.1621 6.45312L14.75 3.625C13.333 2.45064 11.5513 1.80868 9.71387 1.80859C5.35015 1.80882 1.80869 5.35747 1.80859 9.74023V10.3857C1.80864 13.0012 2.99811 15.4727 5.03809 17.0996L18.7402 28.0273L32.5449 17.0947C34.5949 15.4709 35.792 12.9935 35.792 10.3721V9.81348C35.7919 5.39018 32.2166 1.80881 27.8125 1.80859Z"
+                            fill="#A9B1C2"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="discount-badge-wrap">
+                        <span
+                          class="discount-badge discount-badge-default pop-17-500"
+                          >Discount</span
+                        >
+                        <span
+                          class="discount-badge discount-badge-hover pop-17-500"
+                          data-amount="10%"
+                        >
+                          <span class="discount-amount">10% </span> Discount
+                        </span>
+                      </div>
+                      <div class="product-card-img">
+                        <img
+                          src="./assets/product-grid-img.png"
+                          alt="Product"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="card-info-left">
+                        <div class="card-name pop-20-400">
+                          Product Name Goes Here
+                        </div>
+                        <div class="card-price inter-18-600">
+                          Price : 6,700 CHF
+                        </div>
+                      </div>
+                      <a href="#" class="card-arrow-btn">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0516 20.3403L15.0516 9.31528L4.06658 20.3003L0.327339 16.5611L11.6003 5.28809L2.6409e-05 5.28878L2.68548e-05 0.000669901L20.3397 -1.89189e-05L20.3397 20.3403L15.0516 20.3403Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="card-arrow-dot"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <div class="card-img-wrap">
+                      <div class="wishlist-btn">
+                        <svg
+                          width="38"
+                          height="31"
+                          viewBox="0 0 38 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.8125 0C33.2199 0.000220309 37.5995 4.39675 37.5996 9.81348V10.3721C37.5996 13.5446 36.1507 16.5443 33.667 18.5117L19.2998 29.8906L18.7363 30.3369L18.1748 29.8887L3.91016 18.5137C1.43926 16.5431 5.05959e-05 13.5502 0 10.3857V9.74023C9.26261e-05 4.36404 4.34686 0.000229445 9.71387 0C11.9731 9.14352e-05 14.1624 0.790624 15.9033 2.2334L18.7402 4.58398L21.6025 2.22852C23.3527 0.788132 25.5477 4.28877e-05 27.8125 0ZM27.8125 1.80859C25.9675 1.80864 24.1789 2.44988 22.752 3.62402L19.3125 6.45508L18.7363 6.92871L18.1621 6.45312L14.75 3.625C13.333 2.45064 11.5513 1.80868 9.71387 1.80859C5.35015 1.80882 1.80869 5.35747 1.80859 9.74023V10.3857C1.80864 13.0012 2.99811 15.4727 5.03809 17.0996L18.7402 28.0273L32.5449 17.0947C34.5949 15.4709 35.792 12.9935 35.792 10.3721V9.81348C35.7919 5.39018 32.2166 1.80881 27.8125 1.80859Z"
+                            fill="#A9B1C2"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="discount-badge-wrap">
+                        <span
+                          class="discount-badge discount-badge-default pop-17-500"
+                          >Discount</span
+                        >
+                        <span
+                          class="discount-badge discount-badge-hover pop-17-500"
+                          data-amount="10%"
+                        >
+                          <span class="discount-amount">10% </span> Discount
+                        </span>
+                      </div>
+                      <div class="product-card-img">
+                        <img
+                          src="./assets/product-grid-img.png"
+                          alt="Product"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="card-info-left">
+                        <div class="card-name pop-20-400">
+                          Product Name Goes Here
+                        </div>
+                        <div class="card-price inter-18-600">
+                          Price : 6,700 CHF
+                        </div>
+                      </div>
+                      <a href="#" class="card-arrow-btn">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0516 20.3403L15.0516 9.31528L4.06658 20.3003L0.327339 16.5611L11.6003 5.28809L2.6409e-05 5.28878L2.68548e-05 0.000669901L20.3397 -1.89189e-05L20.3397 20.3403L15.0516 20.3403Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="card-arrow-dot"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <div class="card-img-wrap">
+                      <div class="wishlist-btn">
+                        <svg
+                          width="38"
+                          height="31"
+                          viewBox="0 0 38 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.8125 0C33.2199 0.000220309 37.5995 4.39675 37.5996 9.81348V10.3721C37.5996 13.5446 36.1507 16.5443 33.667 18.5117L19.2998 29.8906L18.7363 30.3369L18.1748 29.8887L3.91016 18.5137C1.43926 16.5431 5.05959e-05 13.5502 0 10.3857V9.74023C9.26261e-05 4.36404 4.34686 0.000229445 9.71387 0C11.9731 9.14352e-05 14.1624 0.790624 15.9033 2.2334L18.7402 4.58398L21.6025 2.22852C23.3527 0.788132 25.5477 4.28877e-05 27.8125 0ZM27.8125 1.80859C25.9675 1.80864 24.1789 2.44988 22.752 3.62402L19.3125 6.45508L18.7363 6.92871L18.1621 6.45312L14.75 3.625C13.333 2.45064 11.5513 1.80868 9.71387 1.80859C5.35015 1.80882 1.80869 5.35747 1.80859 9.74023V10.3857C1.80864 13.0012 2.99811 15.4727 5.03809 17.0996L18.7402 28.0273L32.5449 17.0947C34.5949 15.4709 35.792 12.9935 35.792 10.3721V9.81348C35.7919 5.39018 32.2166 1.80881 27.8125 1.80859Z"
+                            fill="#A9B1C2"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="discount-badge-wrap">
+                        <span
+                          class="discount-badge discount-badge-default pop-17-500"
+                          >Discount</span
+                        >
+                        <span
+                          class="discount-badge discount-badge-hover pop-17-500"
+                          data-amount="10%"
+                        >
+                          <span class="discount-amount">10% </span> Discount
+                        </span>
+                      </div>
+                      <div class="product-card-img">
+                        <img
+                          src="./assets/product-grid-img.png"
+                          alt="Product"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="card-info-left">
+                        <div class="card-name pop-20-400">
+                          Product Name Goes Here
+                        </div>
+                        <div class="card-price inter-18-600">
+                          Price : 6,700 CHF
+                        </div>
+                      </div>
+                      <a href="#" class="card-arrow-btn">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0516 20.3403L15.0516 9.31528L4.06658 20.3003L0.327339 16.5611L11.6003 5.28809L2.6409e-05 5.28878L2.68548e-05 0.000669901L20.3397 -1.89189e-05L20.3397 20.3403L15.0516 20.3403Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="card-arrow-dot"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <div class="card-img-wrap">
+                      <div class="wishlist-btn">
+                        <svg
+                          width="38"
+                          height="31"
+                          viewBox="0 0 38 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.8125 0C33.2199 0.000220309 37.5995 4.39675 37.5996 9.81348V10.3721C37.5996 13.5446 36.1507 16.5443 33.667 18.5117L19.2998 29.8906L18.7363 30.3369L18.1748 29.8887L3.91016 18.5137C1.43926 16.5431 5.05959e-05 13.5502 0 10.3857V9.74023C9.26261e-05 4.36404 4.34686 0.000229445 9.71387 0C11.9731 9.14352e-05 14.1624 0.790624 15.9033 2.2334L18.7402 4.58398L21.6025 2.22852C23.3527 0.788132 25.5477 4.28877e-05 27.8125 0ZM27.8125 1.80859C25.9675 1.80864 24.1789 2.44988 22.752 3.62402L19.3125 6.45508L18.7363 6.92871L18.1621 6.45312L14.75 3.625C13.333 2.45064 11.5513 1.80868 9.71387 1.80859C5.35015 1.80882 1.80869 5.35747 1.80859 9.74023V10.3857C1.80864 13.0012 2.99811 15.4727 5.03809 17.0996L18.7402 28.0273L32.5449 17.0947C34.5949 15.4709 35.792 12.9935 35.792 10.3721V9.81348C35.7919 5.39018 32.2166 1.80881 27.8125 1.80859Z"
+                            fill="#A9B1C2"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="discount-badge-wrap">
+                        <span
+                          class="discount-badge discount-badge-default pop-17-500"
+                          >Discount</span
+                        >
+                        <span
+                          class="discount-badge discount-badge-hover pop-17-500"
+                          data-amount="10%"
+                        >
+                          <span class="discount-amount">10% </span> Discount
+                        </span>
+                      </div>
+                      <div class="product-card-img">
+                        <img
+                          src="./assets/product-grid-img.png"
+                          alt="Product"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="card-info-left">
+                        <div class="card-name pop-20-400">
+                          Product Name Goes Here
+                        </div>
+                        <div class="card-price inter-18-600">
+                          Price : 6,700 CHF
+                        </div>
+                      </div>
+                      <a href="#" class="card-arrow-btn">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0516 20.3403L15.0516 9.31528L4.06658 20.3003L0.327339 16.5611L11.6003 5.28809L2.6409e-05 5.28878L2.68548e-05 0.000669901L20.3397 -1.89189e-05L20.3397 20.3403L15.0516 20.3403Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="card-arrow-dot"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <div class="card-img-wrap">
+                      <div class="wishlist-btn">
+                        <svg
+                          width="38"
+                          height="31"
+                          viewBox="0 0 38 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.8125 0C33.2199 0.000220309 37.5995 4.39675 37.5996 9.81348V10.3721C37.5996 13.5446 36.1507 16.5443 33.667 18.5117L19.2998 29.8906L18.7363 30.3369L18.1748 29.8887L3.91016 18.5137C1.43926 16.5431 5.05959e-05 13.5502 0 10.3857V9.74023C9.26261e-05 4.36404 4.34686 0.000229445 9.71387 0C11.9731 9.14352e-05 14.1624 0.790624 15.9033 2.2334L18.7402 4.58398L21.6025 2.22852C23.3527 0.788132 25.5477 4.28877e-05 27.8125 0ZM27.8125 1.80859C25.9675 1.80864 24.1789 2.44988 22.752 3.62402L19.3125 6.45508L18.7363 6.92871L18.1621 6.45312L14.75 3.625C13.333 2.45064 11.5513 1.80868 9.71387 1.80859C5.35015 1.80882 1.80869 5.35747 1.80859 9.74023V10.3857C1.80864 13.0012 2.99811 15.4727 5.03809 17.0996L18.7402 28.0273L32.5449 17.0947C34.5949 15.4709 35.792 12.9935 35.792 10.3721V9.81348C35.7919 5.39018 32.2166 1.80881 27.8125 1.80859Z"
+                            fill="#A9B1C2"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="discount-badge-wrap">
+                        <span
+                          class="discount-badge discount-badge-default pop-17-500"
+                          >Discount</span
+                        >
+                        <span
+                          class="discount-badge discount-badge-hover pop-17-500"
+                          data-amount="10%"
+                        >
+                          <span class="discount-amount">10% </span> Discount
+                        </span>
+                      </div>
+                      <div class="product-card-img">
+                        <img
+                          src="./assets/product-grid-img.png"
+                          alt="Product"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="card-info-left">
+                        <div class="card-name pop-20-400">
+                          Product Name Goes Here
+                        </div>
+                        <div class="card-price inter-18-600">
+                          Price : 6,700 CHF
+                        </div>
+                      </div>
+                      <a href="#" class="card-arrow-btn">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0516 20.3403L15.0516 9.31528L4.06658 20.3003L0.327339 16.5611L11.6003 5.28809L2.6409e-05 5.28878L2.68548e-05 0.000669901L20.3397 -1.89189e-05L20.3397 20.3403L15.0516 20.3403Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="card-arrow-dot"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <div class="card-img-wrap">
+                      <div class="wishlist-btn">
+                        <svg
+                          width="38"
+                          height="31"
+                          viewBox="0 0 38 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.8125 0C33.2199 0.000220309 37.5995 4.39675 37.5996 9.81348V10.3721C37.5996 13.5446 36.1507 16.5443 33.667 18.5117L19.2998 29.8906L18.7363 30.3369L18.1748 29.8887L3.91016 18.5137C1.43926 16.5431 5.05959e-05 13.5502 0 10.3857V9.74023C9.26261e-05 4.36404 4.34686 0.000229445 9.71387 0C11.9731 9.14352e-05 14.1624 0.790624 15.9033 2.2334L18.7402 4.58398L21.6025 2.22852C23.3527 0.788132 25.5477 4.28877e-05 27.8125 0ZM27.8125 1.80859C25.9675 1.80864 24.1789 2.44988 22.752 3.62402L19.3125 6.45508L18.7363 6.92871L18.1621 6.45312L14.75 3.625C13.333 2.45064 11.5513 1.80868 9.71387 1.80859C5.35015 1.80882 1.80869 5.35747 1.80859 9.74023V10.3857C1.80864 13.0012 2.99811 15.4727 5.03809 17.0996L18.7402 28.0273L32.5449 17.0947C34.5949 15.4709 35.792 12.9935 35.792 10.3721V9.81348C35.7919 5.39018 32.2166 1.80881 27.8125 1.80859Z"
+                            fill="#A9B1C2"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="discount-badge-wrap">
+                        <span
+                          class="discount-badge discount-badge-default pop-17-500"
+                          >Discount</span
+                        >
+                        <span
+                          class="discount-badge discount-badge-hover pop-17-500"
+                          data-amount="10%"
+                        >
+                          <span class="discount-amount">10% </span> Discount
+                        </span>
+                      </div>
+                      <div class="product-card-img">
+                        <img
+                          src="./assets/product-grid-img.png"
+                          alt="Product"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="card-info-left">
+                        <div class="card-name pop-20-400">
+                          Product Name Goes Here
+                        </div>
+                        <div class="card-price inter-18-600">
+                          Price : 6,700 CHF
+                        </div>
+                      </div>
+                      <a href="#" class="card-arrow-btn">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0516 20.3403L15.0516 9.31528L4.06658 20.3003L0.327339 16.5611L11.6003 5.28809L2.6409e-05 5.28878L2.68548e-05 0.000669901L20.3397 -1.89189e-05L20.3397 20.3403L15.0516 20.3403Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="card-arrow-dot"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <div class="card-img-wrap">
+                      <div class="wishlist-btn">
+                        <svg
+                          width="38"
+                          height="31"
+                          viewBox="0 0 38 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.8125 0C33.2199 0.000220309 37.5995 4.39675 37.5996 9.81348V10.3721C37.5996 13.5446 36.1507 16.5443 33.667 18.5117L19.2998 29.8906L18.7363 30.3369L18.1748 29.8887L3.91016 18.5137C1.43926 16.5431 5.05959e-05 13.5502 0 10.3857V9.74023C9.26261e-05 4.36404 4.34686 0.000229445 9.71387 0C11.9731 9.14352e-05 14.1624 0.790624 15.9033 2.2334L18.7402 4.58398L21.6025 2.22852C23.3527 0.788132 25.5477 4.28877e-05 27.8125 0ZM27.8125 1.80859C25.9675 1.80864 24.1789 2.44988 22.752 3.62402L19.3125 6.45508L18.7363 6.92871L18.1621 6.45312L14.75 3.625C13.333 2.45064 11.5513 1.80868 9.71387 1.80859C5.35015 1.80882 1.80869 5.35747 1.80859 9.74023V10.3857C1.80864 13.0012 2.99811 15.4727 5.03809 17.0996L18.7402 28.0273L32.5449 17.0947C34.5949 15.4709 35.792 12.9935 35.792 10.3721V9.81348C35.7919 5.39018 32.2166 1.80881 27.8125 1.80859Z"
+                            fill="#A9B1C2"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="discount-badge-wrap">
+                        <span
+                          class="discount-badge discount-badge-default pop-17-500"
+                          >Discount</span
+                        >
+                        <span
+                          class="discount-badge discount-badge-hover pop-17-500"
+                          data-amount="10%"
+                        >
+                          <span class="discount-amount">10% </span> Discount
+                        </span>
+                      </div>
+                      <div class="product-card-img">
+                        <img
+                          src="./assets/product-grid-img.png"
+                          alt="Product"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="card-info-left">
+                        <div class="card-name pop-20-400">
+                          Product Name Goes Here
+                        </div>
+                        <div class="card-price inter-18-600">
+                          Price : 6,700 CHF
+                        </div>
+                      </div>
+                      <a href="#" class="card-arrow-btn">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0516 20.3403L15.0516 9.31528L4.06658 20.3003L0.327339 16.5611L11.6003 5.28809L2.6409e-05 5.28878L2.68548e-05 0.000669901L20.3397 -1.89189e-05L20.3397 20.3403L15.0516 20.3403Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="card-arrow-dot"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <div class="card-img-wrap">
+                      <div class="wishlist-btn">
+                        <svg
+                          width="38"
+                          height="31"
+                          viewBox="0 0 38 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.8125 0C33.2199 0.000220309 37.5995 4.39675 37.5996 9.81348V10.3721C37.5996 13.5446 36.1507 16.5443 33.667 18.5117L19.2998 29.8906L18.7363 30.3369L18.1748 29.8887L3.91016 18.5137C1.43926 16.5431 5.05959e-05 13.5502 0 10.3857V9.74023C9.26261e-05 4.36404 4.34686 0.000229445 9.71387 0C11.9731 9.14352e-05 14.1624 0.790624 15.9033 2.2334L18.7402 4.58398L21.6025 2.22852C23.3527 0.788132 25.5477 4.28877e-05 27.8125 0ZM27.8125 1.80859C25.9675 1.80864 24.1789 2.44988 22.752 3.62402L19.3125 6.45508L18.7363 6.92871L18.1621 6.45312L14.75 3.625C13.333 2.45064 11.5513 1.80868 9.71387 1.80859C5.35015 1.80882 1.80869 5.35747 1.80859 9.74023V10.3857C1.80864 13.0012 2.99811 15.4727 5.03809 17.0996L18.7402 28.0273L32.5449 17.0947C34.5949 15.4709 35.792 12.9935 35.792 10.3721V9.81348C35.7919 5.39018 32.2166 1.80881 27.8125 1.80859Z"
+                            fill="#A9B1C2"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="discount-badge-wrap">
+                        <span
+                          class="discount-badge discount-badge-default pop-17-500"
+                          >Discount</span
+                        >
+                        <span
+                          class="discount-badge discount-badge-hover pop-17-500"
+                          data-amount="10%"
+                        >
+                          <span class="discount-amount">10% </span> Discount
+                        </span>
+                      </div>
+                      <div class="product-card-img">
+                        <img
+                          src="./assets/product-grid-img.png"
+                          alt="Product"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="card-info-left">
+                        <div class="card-name pop-20-400">
+                          Product Name Goes Here
+                        </div>
+                        <div class="card-price inter-18-600">
+                          Price : 6,700 CHF
+                        </div>
+                      </div>
+                      <a href="#" class="card-arrow-btn">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0516 20.3403L15.0516 9.31528L4.06658 20.3003L0.327339 16.5611L11.6003 5.28809L2.6409e-05 5.28878L2.68548e-05 0.000669901L20.3397 -1.89189e-05L20.3397 20.3403L15.0516 20.3403Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="card-arrow-dot"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <div class="card-img-wrap">
+                      <div class="wishlist-btn">
+                        <svg
+                          width="38"
+                          height="31"
+                          viewBox="0 0 38 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.8125 0C33.2199 0.000220309 37.5995 4.39675 37.5996 9.81348V10.3721C37.5996 13.5446 36.1507 16.5443 33.667 18.5117L19.2998 29.8906L18.7363 30.3369L18.1748 29.8887L3.91016 18.5137C1.43926 16.5431 5.05959e-05 13.5502 0 10.3857V9.74023C9.26261e-05 4.36404 4.34686 0.000229445 9.71387 0C11.9731 9.14352e-05 14.1624 0.790624 15.9033 2.2334L18.7402 4.58398L21.6025 2.22852C23.3527 0.788132 25.5477 4.28877e-05 27.8125 0ZM27.8125 1.80859C25.9675 1.80864 24.1789 2.44988 22.752 3.62402L19.3125 6.45508L18.7363 6.92871L18.1621 6.45312L14.75 3.625C13.333 2.45064 11.5513 1.80868 9.71387 1.80859C5.35015 1.80882 1.80869 5.35747 1.80859 9.74023V10.3857C1.80864 13.0012 2.99811 15.4727 5.03809 17.0996L18.7402 28.0273L32.5449 17.0947C34.5949 15.4709 35.792 12.9935 35.792 10.3721V9.81348C35.7919 5.39018 32.2166 1.80881 27.8125 1.80859Z"
+                            fill="#A9B1C2"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="discount-badge-wrap">
+                        <span
+                          class="discount-badge discount-badge-default pop-17-500"
+                          >Discount</span
+                        >
+                        <span
+                          class="discount-badge discount-badge-hover pop-17-500"
+                          data-amount="10%"
+                        >
+                          <span class="discount-amount">10% </span> Discount
+                        </span>
+                      </div>
+                      <div class="product-card-img">
+                        <img
+                          src="./assets/product-grid-img.png"
+                          alt="Product"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="card-info-left">
+                        <div class="card-name pop-20-400">
+                          Product Name Goes Here
+                        </div>
+                        <div class="card-price inter-18-600">
+                          Price : 6,700 CHF
+                        </div>
+                      </div>
+                      <a href="#" class="card-arrow-btn">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0516 20.3403L15.0516 9.31528L4.06658 20.3003L0.327339 16.5611L11.6003 5.28809L2.6409e-05 5.28878L2.68548e-05 0.000669901L20.3397 -1.89189e-05L20.3397 20.3403L15.0516 20.3403Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="card-arrow-dot"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <div class="card-img-wrap">
+                      <div class="wishlist-btn">
+                        <svg
+                          width="38"
+                          height="31"
+                          viewBox="0 0 38 31"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M27.8125 0C33.2199 0.000220309 37.5995 4.39675 37.5996 9.81348V10.3721C37.5996 13.5446 36.1507 16.5443 33.667 18.5117L19.2998 29.8906L18.7363 30.3369L18.1748 29.8887L3.91016 18.5137C1.43926 16.5431 5.05959e-05 13.5502 0 10.3857V9.74023C9.26261e-05 4.36404 4.34686 0.000229445 9.71387 0C11.9731 9.14352e-05 14.1624 0.790624 15.9033 2.2334L18.7402 4.58398L21.6025 2.22852C23.3527 0.788132 25.5477 4.28877e-05 27.8125 0ZM27.8125 1.80859C25.9675 1.80864 24.1789 2.44988 22.752 3.62402L19.3125 6.45508L18.7363 6.92871L18.1621 6.45312L14.75 3.625C13.333 2.45064 11.5513 1.80868 9.71387 1.80859C5.35015 1.80882 1.80869 5.35747 1.80859 9.74023V10.3857C1.80864 13.0012 2.99811 15.4727 5.03809 17.0996L18.7402 28.0273L32.5449 17.0947C34.5949 15.4709 35.792 12.9935 35.792 10.3721V9.81348C35.7919 5.39018 32.2166 1.80881 27.8125 1.80859Z"
+                            fill="#A9B1C2"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+                      <div class="discount-badge-wrap">
+                        <span
+                          class="discount-badge discount-badge-default pop-17-500"
+                          >Discount</span
+                        >
+                        <span
+                          class="discount-badge discount-badge-hover pop-17-500"
+                          data-amount="10%"
+                        >
+                          <span class="discount-amount">10% </span> Discount
+                        </span>
+                      </div>
+                      <div class="product-card-img">
+                        <img
+                          src="./assets/product-grid-img.png"
+                          alt="Product"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-info">
+                      <div class="card-info-left">
+                        <div class="card-name pop-20-400">
+                          Product Name Goes Here
+                        </div>
+                        <div class="card-price inter-18-600">
+                          Price : 6,700 CHF
+                        </div>
+                      </div>
+                      <a href="#" class="card-arrow-btn">
+                        <svg
+                          width="21"
+                          height="21"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0516 20.3403L15.0516 9.31528L4.06658 20.3003L0.327339 16.5611L11.6003 5.28809L2.6409e-05 5.28878L2.68548e-05 0.000669901L20.3397 -1.89189e-05L20.3397 20.3403L15.0516 20.3403Z"
+                            fill="white"
+                          />
+                        </svg>
+                        <span class="card-arrow-dot"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                    <!-- Pagination -->
+      <div class="pg-wrap">
+        <button class="pg-btn prev" id="prevBtn">
+          <svg width="67" height="44" viewBox="0 0 67 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="prev-default" x1="99.3244" y1="43.8292" x2="99.3244" y2="87.6584"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#406EAF" />
+                <stop offset="1" stop-color="#2D5998" />
+              </linearGradient>
+              <linearGradient id="prev-hover" x1="99.3244" y1="43.8292" x2="99.3244" y2="87.6584"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#67A5FF" />
+                <stop offset="1" stop-color="#1977FF" />
+              </linearGradient>
+            </defs>
+            <rect x="66.2162" y="43.8292" width="66.2162" height="43.8292" rx="21.9146"
+              transform="rotate(180 66.2162 43.8292)" fill="url(#prev-default)" class="btn-bg" />
+            <rect x="66.2162" y="43.8292" width="66.2162" height="43.8292" rx="21.9146"
+              transform="rotate(180 66.2162 43.8292)" fill="url(#prev-hover)" class="btn-bg-hover" />
+            <path
+              d="M35.8835 10.5052L28.0075 18.4037H43.7028L43.7028 23.7611H27.5974L35.8835 32.0716L32.1061 35.8607L17.5759 21.2884L32.1061 6.71713L35.8835 10.5052Z"
+              class="btn-arrow" />
+          </svg>
+        </button>
+
+        <span class="pg-label pop-33-700">Page <span id="curPage">1</span> <span class="color-6d pop-33-500">of <span
+              id="totPage">10</span></span></span>
+
+        <button class="pg-btn next" id="nextBtn">
+          <svg width="67" height="44" viewBox="0 0 67 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="next-default" x1="33.1081" y1="0" x2="33.1081" y2="43.8292"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#406EAF" />
+                <stop offset="1" stop-color="#2D5998" />
+              </linearGradient>
+              <linearGradient id="next-hover" x1="33.1081" y1="0" x2="33.1081" y2="43.8292"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#67A5FF" />
+                <stop offset="1" stop-color="#1977FF" />
+              </linearGradient>
+            </defs>
+            <rect width="66.2162" height="43.8292" rx="21.9146" fill="url(#next-default)" class="btn-bg" />
+            <rect width="66.2162" height="43.8292" rx="21.9146" fill="url(#next-hover)" class="btn-bg-hover" />
+            <path
+              d="M30.3328 33.324L38.2087 25.4255L22.5134 25.4255L22.5134 20.0681L38.6189 20.0681L30.3328 11.7576L34.1101 7.9685L48.6404 22.5408L34.1101 37.1121L30.3328 33.324Z"
+              class="btn-arrow" />
+          </svg>
+        </button>
+      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="oh-section">
+        <h3 class="oh-heading pop-54-700">Öffnungszeiten:</h3>
+
+        <div class="oh-card">
+          <div class="oh-title pop-41-400">
+            <svg
+              width="52"
+              height="52"
+              viewBox="0 0 52 52"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25.7998 0C40.0487 0 51.5995 11.5509 51.5996 25.7998C51.5996 40.0488 40.0488 51.5996 25.7998 51.5996C11.5509 51.5995 0 40.0487 0 25.7998C0.000105142 11.551 11.551 0.000105148 25.7998 0ZM25.7998 4.7998C14.202 4.79991 4.79991 14.202 4.7998 25.7998C4.7998 37.3977 14.2019 46.7997 25.7998 46.7998C37.3978 46.7998 46.7998 37.3978 46.7998 25.7998C46.7997 14.2019 37.3977 4.7998 25.7998 4.7998ZM28.2002 22.75C28.9872 23.1913 29.6085 23.8915 29.9521 24.7344H40.0342V29.5342H28.5254C27.8783 29.9836 27.0927 30.248 26.2451 30.248C25.3976 30.248 24.612 29.9835 23.9648 29.5342H23.3994V29.0596C22.6838 28.3363 22.2412 27.342 22.2412 26.2441C22.2413 25.146 22.6834 24.151 23.3994 23.4277V9.78613H28.2002V22.75Z"
+                fill="#94CAF6"
+              />
+            </svg>
+            Öffnungszeiten an regulären Tagen
+          </div>
+          <div class="oh-rows">
+            <div class="oh-row">
+              <span class="oh-day">Montag – Freitag :</span>
+              <span class="oh-time pop-39-500">09:00 – 18:00</span>
+            </div>
+            <div class="oh-row">
+              <span class="oh-day">Samstag :</span>
+              <span class="oh-time pop-39-500">09:00 – 15:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-section">
+        <div class="footer-bg-wrap">
+          <img src="./assets/footer-bg.jpg" alt="" />
+        </div>
+
+        <div class="ft">
+          <!-- Static dim shapes (always visible) -->
+          <!-- Bottom-left static shape -->
+          <svg
+            class="ft-deco ft-deco-static"
+            viewBox="0 0 1608 1140"
+            preserveAspectRatio="xMinYMax meet"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M569.564 998.75V1054.25L521.5 1082L473.436 1054.25V998.75L521.5 971L569.564 998.75ZM476.436 1000.48V1052.52L521.5 1078.54L566.564 1052.52V1000.48L521.5 974.463L476.436 1000.48ZM331 951.199L331.12 951L392 987.53L389.941 990.96L330.012 955H0V951H331V951.199ZM541.129 804.5V915.5L445 971L348.871 915.5V804.5L445 749L541.129 804.5ZM351.871 806.231V913.768L445 967.536L538.129 913.768V806.231L445 752.463L351.871 806.231Z"
+              fill="url(#ftDecoSa)"
+              fill-opacity="0.1"
+            />
+            <defs>
+              <radialGradient
+                id="ftDecoSa"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientTransform="matrix(-258 119 -196 -338 441 834)"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#0FADFD" />
+                <stop offset="0.54" stop-color="#004DF3" />
+                <stop offset="1" stop-color="#6C9AFF" />
+              </radialGradient>
+            </defs>
+          </svg>
+          <!-- Top-right static shape (pinned to top-right) -->
+          <svg
+            class="ft-deco ft-deco-static ft-deco-topright"
+            viewBox="960 0 648 340"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1159.13 167.5V278.5L1063 334L966.871 278.5V167.5L1063 112L1159.13 167.5ZM969.871 169.231V276.768L1063 330.536L1156.13 276.768V169.231L1063 115.463L969.871 169.231ZM1608 188H1545V184H1608V188ZM1608 116H1297.99L1238.06 151.964L1236 148.534L1296.88 112L1297 112.199V112H1608V116ZM1270.13 76.5L1174 132L1077.87 76.5V1H1080.87V74.7676L1174 128.536L1267.13 74.7676V1H1270.13V76.5Z"
+              fill="url(#ftDecoSb)"
+              fill-opacity="0.1"
+            />
+            <defs>
+              <radialGradient
+                id="ftDecoSb"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientTransform="matrix(-301 119 -229 -338 1458 86)"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#0FADFD" />
+                <stop offset="0.54" stop-color="#004DF3" />
+                <stop offset="1" stop-color="#6C9AFF" />
+              </radialGradient>
+            </defs>
+          </svg>
+
+          <!-- Animated shapes – bottom-left (hover cycle) -->
+          <div class="ft-deco-wrap">
+            <svg
+              class="ft-deco ft-deco-1"
+              viewBox="0 0 1608 1140"
+              preserveAspectRatio="xMinYMax meet"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M569.564 998.75V1054.25L521.5 1082L473.436 1054.25V998.75L521.5 971L569.564 998.75ZM476.436 1000.48V1052.52L521.5 1078.54L566.564 1052.52V1000.48L521.5 974.463L476.436 1000.48ZM331 951.199L331.12 951L392 987.53L389.941 990.96L330.012 955H0V951H331V951.199ZM541.129 804.5V915.5L445 971L348.871 915.5V804.5L445 749L541.129 804.5ZM351.871 806.231V913.768L445 967.536L538.129 913.768V806.231L445 752.463L351.871 806.231Z"
+                fill="url(#ftDeco1a)"
+              />
+              <defs>
+                <radialGradient
+                  id="ftDeco1a"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientTransform="matrix(-258 119 -196 -338 441 834)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0FADFD" />
+                  <stop offset="0.54" stop-color="#004DF3" />
+                  <stop offset="1" stop-color="#6C9AFF" />
+                </radialGradient>
+              </defs>
+            </svg>
+            <svg
+              class="ft-deco ft-deco-2"
+              viewBox="0 0 1608 1140"
+              preserveAspectRatio="xMinYMax meet"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M569.564 998.75V1054.25L521.5 1082L473.436 1054.25V998.75L521.5 971L569.564 998.75ZM476.436 1000.48V1052.52L521.5 1078.54L566.564 1052.52V1000.48L521.5 974.463L476.436 1000.48ZM331 951.199L331.12 951L392 987.53L389.941 990.96L330.012 955H0V951H331V951.199ZM541.129 804.5V915.5L445 971L348.871 915.5V804.5L445 749L541.129 804.5ZM351.871 806.231V913.768L445 967.536L538.129 913.768V806.231L445 752.463L351.871 806.231Z"
+                fill="url(#ftDeco2a)"
+              />
+              <defs>
+                <radialGradient
+                  id="ftDeco2a"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientTransform="matrix(-258 119 -196 -338 441 974)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0FADFD" />
+                  <stop offset="0.54" stop-color="#004DF3" stop-opacity="0.5" />
+                  <stop offset="1" stop-color="#6C9AFF" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+            </svg>
+            <svg
+              class="ft-deco ft-deco-3"
+              viewBox="0 0 1608 1140"
+              preserveAspectRatio="xMinYMax meet"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M569.564 998.75V1054.25L521.5 1082L473.436 1054.25V998.75L521.5 971L569.564 998.75ZM476.436 1000.48V1052.52L521.5 1078.54L566.564 1052.52V1000.48L521.5 974.463L476.436 1000.48ZM331 951.199L331.12 951L392 987.53L389.941 990.96L330.012 955H0V951H331V951.199ZM541.129 804.5V915.5L445 971L348.871 915.5V804.5L445 749L541.129 804.5ZM351.871 806.231V913.768L445 967.536L538.129 913.768V806.231L445 752.463L351.871 806.231Z"
+                fill="url(#ftDeco3a)"
+              />
+              <defs>
+                <radialGradient
+                  id="ftDeco3a"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientTransform="matrix(299 -245 405 391 153 1030)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0FADFD" stop-opacity="0.8" />
+                  <stop offset="0.54" stop-color="#004DF3" />
+                  <stop offset="1" stop-color="#9EBDFF" stop-opacity="0.75" />
+                </radialGradient>
+              </defs>
+            </svg>
+            <svg
+              class="ft-deco ft-deco-4"
+              viewBox="0 0 1608 1140"
+              preserveAspectRatio="xMinYMax meet"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M569.564 998.75V1054.25L521.5 1082L473.436 1054.25V998.75L521.5 971L569.564 998.75ZM476.436 1000.48V1052.52L521.5 1078.54L566.564 1052.52V1000.48L521.5 974.463L476.436 1000.48ZM331 951.199L331.12 951L392 987.53L389.941 990.96L330.012 955H0V951H331V951.199ZM541.129 804.5V915.5L445 971L348.871 915.5V804.5L445 749L541.129 804.5ZM351.871 806.231V913.768L445 967.536L538.129 913.768V806.231L445 752.463L351.871 806.231Z"
+                fill="url(#ftDeco4a)"
+              />
+              <defs>
+                <radialGradient
+                  id="ftDeco4a"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientTransform="matrix(-314 253 -417 -410 467 924)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0FADFD" stop-opacity="0.5" />
+                  <stop offset="0.54" stop-color="#004DF3" />
+                  <stop offset="1" stop-color="#6C9AFF" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <!-- Animated shapes – top-right (hover cycle) -->
+          <div class="ft-deco-wrap-topright">
+            <svg
+              class="ft-deco ft-deco-1"
+              viewBox="960 0 648 340"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1159.13 167.5V278.5L1063 334L966.871 278.5V167.5L1063 112L1159.13 167.5ZM969.871 169.231V276.768L1063 330.536L1156.13 276.768V169.231L1063 115.463L969.871 169.231ZM1608 188H1545V184H1608V188ZM1608 116H1297.99L1238.06 151.964L1236 148.534L1296.88 112L1297 112.199V112H1608V116ZM1270.13 76.5L1174 132L1077.87 76.5V1H1080.87V74.7676L1174 128.536L1267.13 74.7676V1H1270.13V76.5Z"
+                fill="url(#ftDeco1b)"
+              />
+              <defs>
+                <radialGradient
+                  id="ftDeco1b"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientTransform="matrix(-301 119 -229 -338 1458 86)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0FADFD" />
+                  <stop offset="0.54" stop-color="#004DF3" />
+                  <stop offset="1" stop-color="#6C9AFF" />
+                </radialGradient>
+              </defs>
+            </svg>
+            <svg
+              class="ft-deco ft-deco-2"
+              viewBox="960 0 648 340"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1159.13 167.5V278.5L1063 334L966.871 278.5V167.5L1063 112L1159.13 167.5ZM969.871 169.231V276.768L1063 330.536L1156.13 276.768V169.231L1063 115.463L969.871 169.231ZM1608 188H1545V184H1608V188ZM1608 116H1297.99L1238.06 151.964L1236 148.534L1296.88 112L1297 112.199V112H1608V116ZM1270.13 76.5L1174 132L1077.87 76.5V1H1080.87V74.7676L1174 128.536L1267.13 74.7676V1H1270.13V76.5Z"
+                fill="url(#ftDeco2b)"
+              />
+              <defs>
+                <radialGradient
+                  id="ftDeco2b"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientTransform="matrix(-301 119 -229 -338 1458 226)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0FADFD" />
+                  <stop offset="0.54" stop-color="#004DF3" stop-opacity="0.5" />
+                  <stop offset="1" stop-color="#6C9AFF" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+            </svg>
+            <svg
+              class="ft-deco ft-deco-3"
+              viewBox="960 0 648 340"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1159.13 167.5V278.5L1063 334L966.871 278.5V167.5L1063 112L1159.13 167.5ZM969.871 169.231V276.768L1063 330.536L1156.13 276.768V169.231L1063 115.463L969.871 169.231ZM1608 188H1545V184H1608V188ZM1608 116H1297.99L1238.06 151.964L1236 148.534L1296.88 112L1297 112.199V112H1608V116ZM1270.13 76.5L1174 132L1077.87 76.5V1H1080.87V74.7676L1174 128.536L1267.13 74.7676V1H1270.13V76.5Z"
+                fill="url(#ftDeco3b)"
+              />
+              <defs>
+                <radialGradient
+                  id="ftDeco3b"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientTransform="matrix(349 -245 472 391 1122 282)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0FADFD" stop-opacity="0.8" />
+                  <stop offset="0.54" stop-color="#004DF3" />
+                  <stop offset="1" stop-color="#9EBDFF" stop-opacity="0.75" />
+                </radialGradient>
+              </defs>
+            </svg>
+            <svg
+              class="ft-deco ft-deco-4"
+              viewBox="960 0 648 340"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1159.13 167.5V278.5L1063 334L966.871 278.5V167.5L1063 112L1159.13 167.5ZM969.871 169.231V276.768L1063 330.536L1156.13 276.768V169.231L1063 115.463L969.871 169.231ZM1608 188H1545V184H1608V188ZM1608 116H1297.99L1238.06 151.964L1236 148.534L1296.88 112L1297 112.199V112H1608V116ZM1270.13 76.5L1174 132L1077.87 76.5V1H1080.87V74.7676L1174 128.536L1267.13 74.7676V1H1270.13V76.5Z"
+                fill="url(#ftDeco4b)"
+              />
+              <defs>
+                <radialGradient
+                  id="ftDeco4b"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientTransform="matrix(-366 253 -487 -410 1488 176)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#0FADFD" stop-opacity="0.5" />
+                  <stop offset="0.54" stop-color="#004DF3" />
+                  <stop offset="1" stop-color="#6C9AFF" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="ft-grid">
+            <!-- Brand -->
+            <div class="ft-col-brand">
+              <div>
+                <div class="ft-brand-box">
+                  <div class="ft-logo">
+                    <img src="./assets/footer-logo.png" alt="" />
+                  </div>
+                  <p class="ft-brand-desc pop-16-300">
+                    Pixelgipfel steht für individuell gestaltete Gaming-PCs,
+                    entwickelt von echten Technik-Nerds mit Liebe zum Detail.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rechtliches -->
+            <div>
+              <p class="ft-col-title pop-18-700">Rechtliches</p>
+              <ul class="ft-links pop-18-400">
+                <li><a href="#">AGB</a></li>
+                <li><a href="#">Datenschutzerklärung</a></li>
+                <li><a href="#">Widerrufsrecht</a></li>
+                <li><a href="#">Versandkonditionen</a></li>
+                <li><a href="#">Impressum</a></li>
+              </ul>
+            </div>
+
+            <!-- Support-->
+            <div>
+              <p class="ft-col-title pop-18-700">Support</p>
+              <ul class="ft-links pop-18-400">
+                <li><a href="#">Mein Konto</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Suche</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </div>
+
+            <!-- Investoren -->
+            <div>
+              <p class="ft-col-title pop-18-700">Investoren</p>
+              <a href="#" class="ft-invest-btn pop-17-500">
+                Steig ein
+                <div class="ft-invest-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.1016 19.1015L14.6939 19.1009V7.12423L3.63636 18.1818L1.03926 15.5847L12.2162 4.40767H0.000696664L6.12967e-06 -6.12967e-06H19.1016V19.1015Z"
+                      fill="#D9D9D9"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="ft-grid ft-social">
+            <div class="ft-whatsapp-wrap">
+              <div class="ft-whatsapp-box" id="waBox">
+                <div
+                  class="ft-whatsapp-header"
+                  onclick="
+                    document.getElementById('waBox').classList.toggle('open')
+                  "
+                >
+                  <div class="ft-wa-icon">
+                    <svg
+                      width="48"
+                      height="46"
+                      viewBox="0 0 61 58"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M31.417 0C47.4331 0.000175881 60.417 12.9839 60.417 29C60.417 45.0161 47.4331 57.9998 31.417 58C25.257 58 19.5463 56.0778 14.8496 52.8027L0 58L5.33594 41.6934C3.46651 37.8594 2.41699 33.5524 2.41699 29C2.41699 12.9837 15.4007 0 31.417 0ZM31.417 5.0332C18.1807 5.0332 7.4502 15.7637 7.4502 29C7.4502 33.1717 8.51717 37.0937 10.3916 40.5098L6.04199 51.5557L16.7783 47.9766L16.917 47.9307L16.8926 48.0635C20.9227 51.1387 25.9562 52.9668 31.417 52.9668C44.6531 52.9666 55.3828 42.2362 55.3828 29C55.3828 15.7638 44.6531 5.03338 31.417 5.0332ZM26.749 22.1211L23.6895 25.54C24.9138 31.3141 31.3402 34.7839 34.4004 35.7969L37.46 31.998H38.9902L45.1113 35.7969C45.1112 41.571 40.2655 42.5081 37.8428 42.2549C26.2141 39.8236 19.7365 30.8586 17.9512 26.6797C15.1969 19.6897 18.5887 15.9154 20.6289 14.9023H23.6895L26.749 22.1211Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="ft-wa-label pop-24-700">Whatsapp</div>
+
+                  <svg
+                    class="ft-wa-chevron"
+                    width="22"
+                    height="15"
+                    viewBox="0 0 22 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.9519 3.57835e-05L21.9037 10.9519L18.4449 14.4108L10.9512 6.91711L3.45819 14.4101L0 10.9519L10.9519 3.57835e-05Z"
+                      fill="#8BB3FF"
+                    />
+                  </svg>
+                </div>
+
+                <div class="ft-wa-content">
+                  <div class="ft-wa-inner pop-17-700">
+                    <a href="#" class="ft-wa-btn">Join Group</a>
+                    <a href="#" class="ft-wa-btn">QR Scan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="business">
+              <p class="ft-col-title business-title pop-18-700">
+                Business Anfrage
+              </p>
+              <a href="#" class="ft-invest-btn ft-business-btn">
+                Jetzt Anfrage
+                <div class="ft-invest-icon ft-business-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.1016 19.1015L14.6939 19.1009V7.12423L3.63636 18.1818L1.03926 15.5847L12.2162 4.40767H0.000696664L6.12967e-06 -6.12967e-06H19.1016V19.1015Z"
+                      fill="#D9D9D9"
+                    />
+                  </svg>
+                </div>
+              </a>
+
+              <div class="ft-mascot">
+                <div class="ft-mascot-placeholder">
+                  <img src="./assets/cartoon.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="ft-newsletter">
+              <p class="ft-newsletter-title pop-17-700">
+                Bleib auf dem Laufenden!
+              </p>
+              <p class="ft-newsletter-desc pop-16-500">
+                Melde dich für unseren Newsletter an und erhalte exklusive
+                Updates, Angebote und Neuigkeiten – garantiert ohne Spam.
+              </p>
+
+              <div class="ft-email-wrap">
+                <input
+                  type="email"
+                  placeholder="Deine E-Mail Adresse"
+                  class="pop-15-400"
+                />
+                <button class="ft-sub-btn pop-15-500">Abonnieren</button>
+              </div>
+
+              <p class="ft-social-title pop-18-700">Soziale Medien</p>
+              <div class="ft-social-row">
+                <!-- TikTok -->
+                <button class="ft-social-btn" title="TikTok">
+                  <svg
+                    width="32"
+                    height="36"
+                    viewBox="0 0 32 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.959 0C21.0093 2.01121 21.632 5.08615 23.2529 7.60547C24.7976 10.0061 27.2221 11.9028 31.2041 12.0166L31.1289 14.6631L31.0527 17.3096C26.6248 17.183 23.3257 15.4917 20.96 13.1475V24.6377C20.9599 30.4282 16.2645 35.1112 10.4795 35.1113C4.69187 35.1112 0.000236915 30.4194 0 24.6318V24.4531C0.000176271 18.5671 4.77209 13.7959 10.6582 13.7959H11.1914V19.0908H10.6582C7.69655 19.0908 5.2951 21.4915 5.29492 24.4531V24.6318C5.29516 27.495 7.61633 29.8162 10.4795 29.8164C13.3455 29.8162 15.664 27.4983 15.6641 24.6377V0.0664062L20.959 0Z"
+                      fill="#50AAFF"
+                    />
+                  </svg>
+                </button>
+                <!-- Facebook -->
+                <button class="ft-social-btn" title="Facebook">
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.3115 0.00585938C29.484 0.263711 37.6514 8.59157 37.6514 18.8262L37.6455 19.3115C37.3878 29.4838 29.0605 37.6509 18.8262 37.6514L18.3398 37.6455C8.32873 37.3919 0.259523 29.3226 0.00585938 19.3115L0 18.8262C0 8.42903 8.42903 0 18.8262 0L19.3115 0.00585938ZM18.8262 3.90918C10.5878 3.90918 3.90918 10.5878 3.90918 18.8262C3.90946 25.806 8.70364 31.6648 15.1787 33.292V20.2168H12.4902V16.7041H15.1787V16.0586C15.1787 13.6451 15.8831 11.8404 17.293 10.6455C18.7028 9.42681 20.818 8.88989 23.6377 9.0332V12.6172C22.0368 12.5456 20.9137 12.8089 20.2686 13.4062C19.6235 13.9798 19.3008 14.9712 19.3008 16.3809V16.7041H23.6377V20.2168H19.3008V33.7334C27.3189 33.4824 33.7419 26.9052 33.7422 18.8262C33.7422 10.5881 27.0642 3.90961 18.8262 3.90918Z"
+                      fill="#50AAFF"
+                    />
+                  </svg>
+                </button>
+                <!-- Instagram -->
+                <button class="ft-social-btn" title="Instagram">
+                  <svg
+                    width="35"
+                    height="35"
+                    viewBox="0 0 35 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.7061 0C31.7165 0.00019428 34.9687 3.25121 34.9688 7.26172V27.1953C34.9688 31.2059 31.7166 34.4568 27.7061 34.457H7.26172C3.25104 34.457 0 31.206 0 27.1953V7.26172C5.66921e-05 3.25109 3.25107 0 7.26172 0H27.7061ZM7.05176 3.18164C4.8933 3.29086 3.17681 5.07614 3.17676 7.26172V27.1953C3.17676 29.3809 4.89327 31.1662 7.05176 31.2754L7.26172 31.2803H27.7061C29.9619 31.2801 31.791 29.4512 31.791 27.1953V7.26172C31.791 5.00588 29.9619 3.17695 27.7061 3.17676H7.26172L7.05176 3.18164ZM17.6885 8.29688C22.4131 8.53645 26.1699 12.4434 26.1699 17.2275L26.1582 17.6875C25.9186 22.4119 22.0125 26.1688 17.2285 26.1689L16.7676 26.1572C12.1956 25.9252 8.52974 22.2595 8.29785 17.6875L8.28613 17.2275C8.28613 12.289 12.29 8.28521 17.2285 8.28516L17.6885 8.29688ZM17.2285 11.4619C14.0447 11.462 11.4629 14.0437 11.4629 17.2275C11.4631 20.4112 14.0448 22.9921 17.2285 22.9922C20.4121 22.992 22.9929 20.4111 22.9932 17.2275C22.9932 14.0438 20.4122 11.4621 17.2285 11.4619ZM26.4258 6.24219C27.4135 6.24221 28.2139 7.04355 28.2139 8.03125C28.2136 9.01876 27.4133 9.81932 26.4258 9.81934C25.4382 9.81934 24.6379 9.01877 24.6377 8.03125C24.6377 7.04354 25.4381 6.24219 26.4258 6.24219Z"
+                      fill="#50AAFF"
+                    />
+                  </svg>
+                </button>
+                <!-- LinkedIn -->
+                <button class="ft-social-btn" title="LinkedIn">
+                  <svg
+                    width="37"
+                    height="37"
+                    viewBox="0 0 37 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.17188 36.3193H0.544922V12.3496H8.17188V36.3193ZM19.7939 15.6182C20.8231 13.4391 24.515 9.62482 31.0518 12.3486C33.7756 14.1643 36.4999 17.2524 36.1367 22.7002L36.5 36.3193L28.5098 36.1377V22.5186C28.5097 20.4125 26.8023 18.7051 24.6963 18.7051C22.5903 18.7052 20.8829 20.4126 20.8828 22.5186V36.1377H12.5303V11.9863H19.7939V15.6182ZM4.3584 0C6.76523 0.000102294 8.71671 1.95156 8.7168 4.3584C8.7168 6.76531 6.76528 8.71669 4.3584 8.7168C1.95143 8.7168 0 6.76537 0 4.3584C8.20921e-05 1.9515 1.95148 0 4.3584 0Z"
+                      fill="#50AAFF"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scroll to Top Button -->
+          <button
+            class="ft-scroll-top"
+            id="scrollTopBtn"
+            title="Back to top"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            aria-label="Scroll back to top"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="96"
+              height="90"
+              viewBox="0 0 96 90"
+              fill="none"
+            >
+              <rect
+                class="svg-bg"
+                width="96"
+                height="90"
+                rx="12"
+                fill="#35A3FF"
+              />
+
+              <rect
+                x="4"
+                y="32"
+                width="88"
+                height="54"
+                rx="10"
+                fill="#010514"
+              />
+
+              <path
+                d="M37.3365 61.3071L46.957 51.6866V70.5285H50.1266V51.6852L59.7478 61.3064L61.9886 59.0656L50.7833 47.8603L50.784 47.8596L48.5425 45.6182L35.095 59.0656L37.3365 61.3071Z"
+                fill="#B5D8FF"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="ft-bottom">
+          <div class="footer-inner">
+            <div class="footer-brand pop-13-700">
+              © 2026 <a href="#">Pixelgipfel AG.</a>
+            </div>
+            <div class="footer-nav pop-13-700" aria-label="Footer navigation">
+              <ul>
+                <li>
+                  <a href="#">Privacy policy</a>
+                </li>
+                <li>
+                  <a href="#">Right of Withdrawl</a>
+                </li>
+                <li>
+                  <a href="#">Terms &amp; Conditions</a>
+                </li>
+                <li>
+                  <a href="#">Shipment</a>
+                </li>
+                <li>
+                  <a href="#">Imprint</a>
+                </li>
+                <li>
+                  <a href="#">Cancellation policy</a>
+                </li>
+                <li>
+                  <a href="#">Contact information</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

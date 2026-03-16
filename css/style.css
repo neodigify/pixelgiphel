@@ -1,0 +1,479 @@
+:root {
+  --100: 100%;
+  --1320px: 1320px;
+
+  /* ── Base ── */
+  --white: #ffffff;
+  --black: #000000;
+  --transparent: #fff0;
+
+  /* ── Legacy ── */
+  --1E4642: #1e4642;
+  --1C3A13: #1c3a13;
+  --F3F3EB: #f3f3eb;
+  --C1DAD8: #c1dad8;
+  --C2EA99: #c2ea99;
+
+  /* ── Dark backgrounds ── */
+  --00040B: #00040b;
+  --010306: #010306;
+  --01040C: #01040c;
+  --011E37: #011e37;
+  --011E55: #011e55;
+  --01204D: #01204d;
+  --030710: #030710;
+  --03080F: #03080f;
+  --030B22: #030b22;
+  --050E2A: #050e2a;
+  --061227: #061227;
+  --070E1D: #070e1d;
+  --071530: #071530;
+  --0B162F: #0b162f;
+
+  /* ── Blues (dark) ── */
+  --003CBD: #003cbd;
+  --0059FF: #0059ff;
+  --0841BD: #0841bd;
+  --084BA3: #084ba3;
+  --0F57C3: #0f57c3;
+  --1078EE: #1078ee;
+  --1092FF: #1092ff;
+  --144194: #144194;
+  --1A3E82: #1a3e82;
+  --1C283F: #1c283f;
+  --1C5CD2: #1c5cd2;
+  --1E3A6E: #1e3a6e;
+  --19283A: #19283a;
+
+  /* ── Blues (mid) ── */
+  --257CEF: #257cef;
+  --286FD8: #286fd8;
+  --2976B7: #2976b7;
+  --2A5697: #2a5697;
+  --2C5483: #2c5483;
+  --2F71FF: #2f71ff;
+  --314261: #314261;
+  --3392FF: #3392ff;
+  --35A3FF: #35a3ff;
+  --38B6F5: #38b6f5;
+  --3972EE: #3972ee;
+  --4277C5: #4277c5;
+  --4385FF: #4385ff;
+  --44527E: #44527e;
+  --4A7FD4: #4a7fd4;
+  --4A92FF: #4a92ff;
+  --4B5C92: #4b5c92;
+  --4E6E9E: #4e6e9e;
+  --4E89E2: #4e89e2;
+
+  /* ── Blues (light) ── */
+  --516983: #516983;
+  --516CA7: #516ca7;
+  --52B0FF: #52b0ff;
+  --5594E8: #5594e8;
+  --599AFB: #599afb;
+  --6198FF: #6198ff;
+  --6C9AFF: #6c9aff;
+  --6CA1CE: #6ca1ce;
+  --6CAAFA: #6caafa;
+  --6D90D0: #6d90d0;
+  --77ADFF: #77adff;
+  --77C6FF: #77c6ff;
+  --7EC5FF: #7ec5ff;
+  --87B1FF: #87b1ff;
+  --87BFFF: #87bfff;
+  --8EACE3: #8eace3;
+  --94CAF6: #94caf6;
+  --97D0FF: #97d0ff;
+  --98C5FF: #98c5ff;
+  --A9D8FF: #a9d8ff;
+  --AAD9FF: #aad9ff;
+  --B4DDFF: #b4ddff;
+  --B5CCF6: #b5ccf6;
+  --B5D8FF: #b5d8ff;
+  --BFE2FF: #bfe2ff;
+  --C8EEFF: #c8eeff;
+  --D5E4FF: #d5e4ff;
+
+  /* ── Purple ── */
+  --6441FF: #6441ff;
+  --8A38F5: #8a38f5;
+
+  /* ── Accent / Hover ── */
+  --00AAFF: #00aaff;
+  --0486FF: #0486ff;
+
+  /* ── Neutrals ── */
+  --A5DAEE: #a5daee;
+  --B2CBDA: #b2cbda;
+  --D9D9D9: #d9d9d9;
+}
+
+/* ── Font utility classes ── */
+.pop-13-700 {
+  font-family: "Poppins"; 
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.pop-15-400 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.pop-15-500 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.pop-16-300 {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.pop-16-500 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.pop-17-300 {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.pop-17-500 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.pop-17-700 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.pop-18-400 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.pop-18-700 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.pop-19-500 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.pop-20-400 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.pop-20-500 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.pop-24-300 {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.pop-24-700 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.pop-25-300 {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.pop-25-400 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.pop-26-400 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.pop-28-500 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.pop-28-700 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.pop-29-400 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 29px;
+}
+
+.pop-29-700 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 29px;
+}
+
+.pop-33-500 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 33px;
+}
+
+.pop-33-700 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 33px;
+}
+
+.pop-37-700 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 37px;
+}
+
+.pop-39-500 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 39px;
+}
+
+.pop-40-600 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.pop-41-400 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 41px;
+}
+
+.pop-54-700 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 54px;
+}
+
+.pop-56-700 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.inter-18-600 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.logo {
+  z-index: 999;
+}
+
+@media screen and (max-width: 1300px) {
+  .pop-13-700 {
+    font-size: 13px;
+  }
+
+  .pop-15-400 {
+    font-size: 15px;
+  }
+
+  .pop-15-500 {
+    font-size: 15px;
+  }
+
+  .pop-16-300 {
+    font-size: 12px;
+  }
+
+  .pop-16-500 {
+    font-size: 12px;
+  }
+
+  .pop-17-300 {
+    font-size: 13px;
+  }
+
+  .pop-17-500 {
+    font-size: 13px;
+  }
+
+  .pop-17-700 {
+    font-size: 13px;
+  }
+
+  .pop-18-400 {
+    font-size: 14px;
+  }
+
+  .pop-18-700 {
+    font-size: 14px;
+  }
+
+  .pop-19-500 {
+    font-size: 14px;
+  }
+
+  .pop-20-400 {
+    font-size: 15px;
+  }
+
+  .pop-20-500 {
+    font-size: 15px;
+  }
+
+  .pop-24-300 {
+    font-size: 18px;
+  }
+
+  .pop-24-700 {
+    font-size: 18px;
+  }
+
+  .pop-25-300 {
+    font-size: 19px;
+  }
+
+  .pop-25-400 {
+    font-size: 19px;
+  }
+
+  .pop-26-400 {
+    font-size: 20px;
+  }
+
+  .pop-28-500 {
+    font-size: 21px;
+  }
+
+  .pop-28-700 {
+    font-size: 21px;
+  }
+
+  .pop-29-400 {
+    font-size: 22px;
+  }
+
+  .pop-29-700 {
+    font-size: 22px;
+  }
+
+  .pop-33-500 {
+    font-size: 25px;
+  }
+
+  .pop-33-700 {
+    font-size: 25px;
+  }
+
+  .pop-37-700 {
+    font-size: 28px;
+  }
+
+  .pop-39-500 {
+    font-size: 29px;
+  }
+
+  .pop-40-600 {
+    font-size: 30px;
+  }
+
+  .pop-41-400 {
+    font-size: 31px;
+  }
+
+  .pop-54-700 {
+    font-size: 41px;
+  }
+
+  .pop-56-700 {
+    font-size: 42px;
+  }
+
+  .inter-18-600 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 991px) {
+
+  .pop-41-400 {
+    font-size: 25px;
+  }
+
+
+}
+.main {
+  margin: 0 auto;
+  /* background-color: #03080f; */
+  padding: 73px 0px 0px;
+}
+
+.desktop-hide {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 1575px) {
+  .main {
+    padding: 50px 0px 0px;
+  }
+
+
+}
+
+
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none;
+  }
+  
+
+  .desktop-hide {
+    display: block;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+
+}
+
+
+
+
+
+
